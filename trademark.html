@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>News Details - College Bootstrap Template</title>
+  <title>Lex Claws | All in one legal solution</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="assets/img/lexclaws.png" rel="icon">
+  <link href="assets/img/lexclaws.png" rel="apple-touch-icon">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -43,8 +42,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">College</h1>
+        <img src="assets/img/logo.png" alt="">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -77,7 +75,7 @@
 
           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Trademark</a></li>
+              <li><a href="trademark.html">Trademark</a></li>
               <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
@@ -99,19 +97,19 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
     </div>
   </header>
-
-  <main class="main">
+  <main class="main ">
 
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">News Details</h1>
+        <h1 class="mb-2 mb-lg-0">Trademark</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">News Details</li>
+            <li class="current">Trademark</li>
           </ol>
         </nav>
       </div>
@@ -122,7 +120,7 @@
       <div class="container" data-aos="fade-up">
 
         <article class="article">
-          <div class="article-header">
+          <!-- <div class="article-header">
             <div class="meta-categories" data-aos="fade-up">
               <a href="#" class="category">Technology</a>
               <a href="#" class="category">Innovation</a>
@@ -144,26 +142,14 @@
                 <span><i class="bi bi-chat-square-text"></i> 32 Comments</span>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <div class="article-featured-image" data-aos="zoom-in">
             <img src="assets/img/blog/blog-hero-1.webp" alt="UI Design Evolution" class="img-fluid">
           </div>
 
           <div class="article-wrapper">
-            <aside class="table-of-contents" data-aos="fade-left">
-              <h3>Table of Contents</h3>
-              <nav>
-                <ul>
-                  <li><a href="#introduction" class="active">Introduction</a></li>
-                  <li><a href="#skeuomorphism">The Skeuomorphic Era</a></li>
-                  <li><a href="#flat-design">Flat Design Revolution</a></li>
-                  <li><a href="#material-design">Material Design</a></li>
-                  <li><a href="#neumorphism">Rise of Neumorphism</a></li>
-                  <li><a href="#future">Future Trends</a></li>
-                </ul>
-              </nav>
-            </aside>
+            
 
             <div class="article-content">
               <div class="content-section" id="introduction" data-aos="fade-up">
@@ -312,9 +298,42 @@
                 </div>
               </div>
             </div>
+            <aside class="table-of-contents contact" data-aos="fade-left">
+              <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
+                <h3>Enquiry Form</h3>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p> -->
+  
+                <form action="forms/contact.php" method="post" class="php-email-form">
+                  <div class="row">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                    </div>
+                    <div class="form-group mt-3">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone number" required="">
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="3" placeholder="Message" required="" style="min-height: 100px !important;"></textarea>
+                  </div>
+  
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+  
+                  <div class="form-submit">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </aside>
           </div>
 
-          <div class="article-footer" data-aos="fade-up">
+          <!-- <div class="article-footer" data-aos="fade-up">
             <div class="share-article">
               <h4>Share this article</h4>
               <div class="share-buttons">
@@ -343,7 +362,7 @@
                 <a href="#" class="tag">Technology</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </article>
 
@@ -356,15 +375,15 @@
 
     <div class="container footer-top">
       <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
+        <div class="col-lg-5 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">College</span>
+            <span class="sitename">Lex Claws</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Block BGS, Railway Colony, Tis Hazari, Delhi, 110054</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 98387 80831</span></p>
+            <p><strong>Email:</strong> <span>info@lexclaws.com</span></p>
+            <p><strong>Website:</strong> <span>www.lexclaws.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -378,42 +397,31 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Bare Acts</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Trademark</a></li>
+            <li><a href="#">Challan</a></li>
+            <li><a href="#">Date</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
+        
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
+          <h4>Reach Us</h4>
           <ul>
             <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum du</a></li>
+            <li><a href="#">Nemor</a></li>
             <li><a href="#">Flexo</a></li>
           </ul>
         </div>
@@ -422,21 +430,20 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Lex Claws</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
   </footer>
-
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <a href="#" id="" class="whatsapp d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short"></i></a>
+  
   <!-- Preloader -->
   <div id="preloader"></div>
 

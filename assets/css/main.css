@@ -624,6 +624,32 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+.whatsapp {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 100px;
+  bottom: 50px;
+  z-index: 99999;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.whatsapp i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.whatsapp:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -6000,7 +6026,7 @@ section,
 
 .blog-details .article-wrapper {
   display: grid;
-  grid-template-columns: minmax(200px, 300px) 1fr;
+  grid-template-columns: minmax(300px, 700px) 1fr;
   gap: 3rem;
   position: relative;
 }
@@ -6015,10 +6041,10 @@ section,
   position: sticky;
   top: 100px;
   height: fit-content;
-  padding: 2rem;
+  padding: 1rem;
   background: var(--surface-color);
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media (max-width: 992px) {
