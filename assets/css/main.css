@@ -624,29 +624,20 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
-.whatsapp {
+.whatsapp-button {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 100px;
-  bottom: 50px;
-  z-index: 99999;
-  background-color: red;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #25D366;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
 
-.whatsapp i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.whatsapp:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+.whatsapp-button:hover {
+  transform: scale(1.1);
 }
 
 
@@ -954,25 +945,50 @@ section,
   z-index: 10;
 }
 
-.hero .feature-cards-wrapper .feature-card {
+.hero .feature-cards-wrapper .feature-card-container .service-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  background: transparent;
+  color: var(--heading-color);
+  border: 2px solid var(--heading-color);
+}
+
+.hero .feature-cards-wrapper .feature-card-container .service-link i {
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero .feature-cards-wrapper .feature-card-container .service-link:hover {
+  background: var(--heading-color);
+  color: var(--contrast-color);
+}
+
+.hero .feature-cards-wrapper .feature-card-container .service-link:hover i {
+  transform: translateX(5px);
+}
+.hero .feature-cards-wrapper .feature-card-container {
   background: var(--surface-color);
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
   height: 100%;
   transition: all 0.3s ease;
 }
 
-.hero .feature-cards-wrapper .feature-card:hover,
-.hero .feature-cards-wrapper .feature-card.active {
+
+.hero .feature-cards-wrapper .feature-card-container:hover,
+.hero .feature-cards-wrapper .feature-card-container.active {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-.hero .feature-cards-wrapper .feature-card.active {
+.hero .feature-cards-wrapper .feature-card-container.active {
   background: var(--surface-color);
   border-left: 4px solid var(--accent-color);
 }
@@ -997,6 +1013,7 @@ section,
 
 .hero .feature-cards-wrapper .feature-card .feature-content {
   flex: 1;
+  margin-top: 30px;
 }
 
 .hero .feature-cards-wrapper .feature-card .feature-content h3 {
@@ -1027,7 +1044,22 @@ section,
   border-radius: 10px;
   overflow: hidden;
 }
-
+.service-action-buttons a {
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.service-action-buttons .btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
 @media (max-width: 992px) {
   .hero .upcoming-event .event-content {
     flex-direction: column;
