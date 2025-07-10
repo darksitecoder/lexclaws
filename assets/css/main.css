@@ -213,12 +213,13 @@ h6 {
 }
 .navmenu a .form-group i{
   color: #9c9c9c;
+  cursor: text;
 
 }
 .navmenu a input{
   border: none;
   background-color: transparent;
-  width: 80%;
+  width: 83%;
   padding: 5px 10px;
   font-size: 15px;
 }
