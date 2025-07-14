@@ -1104,21 +1104,21 @@ section,
 
 /* Trademark Registration Card */
 .hero .feature-cards-wrapper .feature-card-container.trademark-card {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/trademark.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/trademark_Prancheta 1.png');
   color: #ffffff;
       background-size: cover;
 }
 
 /* Copyright Card */
 .hero .feature-cards-wrapper .feature-card-container.copyright-card {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/copyright.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/copyright.png');
   color: #ffffff;
       background-size: cover;
 }
 
 /* Patent Card */
 .hero .feature-cards-wrapper .feature-card-container.patent-card {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/patened.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/4535490.png');
   color: #ffffff;
       background-size: cover;
 }
@@ -1132,13 +1132,13 @@ section,
 
 /* Direct Tax Service Card */
 .hero .feature-cards-wrapper .feature-card-container.direct-tax-card {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/direct_tax.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/20945341.jpg');
   color: #ffffff;
       background-size: cover;
 }
 /* Indirect Tax Service Card */
 .hero .feature-cards-wrapper .feature-card-container.indirect-tax-card {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/gst.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/ChatGPT Image Jul 13, 2025, 02_34_22 PM.png');
   color: #ffffff !important;
   background-size: cover;
 }
