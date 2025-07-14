@@ -655,7 +655,7 @@ h6 {
   padding: 5px;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .whatsapp-button:hover {
@@ -669,8 +669,8 @@ h6 {
   -webkit-transform-origin: center bottom;
   -ms-transform-origin: center bottom;
   transform-origin: center bottom;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
@@ -1106,60 +1106,79 @@ section,
 .hero .feature-cards-wrapper .feature-card-container.trademark-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/trademark_Prancheta 1.png');
   color: #ffffff;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  
 }
 
 /* Copyright Card */
 .hero .feature-cards-wrapper .feature-card-container.copyright-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/copyright.png');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 /* Patent Card */
 .hero .feature-cards-wrapper .feature-card-container.patent-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/4535490.png');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 /* Secretarial Service Card */
 .hero .feature-cards-wrapper .feature-card-container.secretarial-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/llp.jpg');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 /* Direct Tax Service Card */
 .hero .feature-cards-wrapper .feature-card-container.direct-tax-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/20945341.jpg');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 /* Indirect Tax Service Card */
 .hero .feature-cards-wrapper .feature-card-container.indirect-tax-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/ChatGPT Image Jul 13, 2025, 02_34_22 PM.png');
   color: #ffffff !important;
-  background-size: cover;
+    background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 /* Book Keeping Card */
 .hero .feature-cards-wrapper .feature-card-container.bookkeeping-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/bookkeeping.jpg');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 /* Registration Card */
 .hero .feature-cards-wrapper .feature-card-container.registration-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/registration.jpg');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 /* Challan Card */
 .hero .feature-cards-wrapper .feature-card-container.challan-card {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services/challan.jpg');
   color: #ffffff;
-      background-size: cover;
+        background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
 }
 
 
@@ -3399,7 +3418,7 @@ section,
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  animation: slides 30s linear infinite;
+  animation: slides 50s linear infinite;
 }
 
 .logos-slider-container img {
