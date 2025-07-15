@@ -3,10 +3,12 @@
 $receiving_email_address = 'contact.lexclaws@gmail.com';
 
 if (file_exists($php_email_form = 'vendor/php-email-form/php-email-form.php')) {
+
   include($php_email_form);
 } else {
   die('Unable to load the "PHP Email Form" Library!');
 }
+
 
 $contact = new PHP_Email_Form;
 $contact->ajax = true;
