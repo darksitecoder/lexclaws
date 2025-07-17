@@ -8797,3 +8797,25 @@ justify-content: center;
 .starter-section {
   /* Add your styles here */
 }
+
+#suggestions {
+  /* border: 1px solid #ccc; */
+  max-height: 150px;
+  overflow-y: auto;
+  top: 65px;
+  right: 0;
+  position: absolute;
+  background: white;
+  width: 270px;
+  display: none;
+  z-index: 10;
+  color: #000;
+  border-radius: 10px;
+}
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}

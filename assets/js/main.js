@@ -1,10 +1,4 @@
-/**
-* Template Name: College
-* Template URL: https://bootstrapmade.com/college-bootstrap-education-template/
-* Updated: Jun 19 2025 with Bootstrap v5.3.6
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -168,4 +162,68 @@
     selector: '.glightbox'
   });
 
+
+
+  
+
 })();
+
+const suggestions = [
+  {
+    label: "Copyright",
+    url: "/copyright.html",
+    keywords: ["copyright", "ip", "intellectual property", "media rights"]
+  },
+  {
+    label: "Trademark",
+    url: "/trademark.html",
+    keywords: ["trademark", "logo", "brand", "name registration"]
+  },
+  {
+    label: "Indirect Tax / GST",
+    url: "/gst.html",
+    keywords: ["indirect tax", "service tax", "vat", "sales tax","gst", "tax", "goods and services tax"]
+  }
+];
+
+const input = document.getElementById("subject");
+const suggestionBox = document.getElementById("suggestions");
+
+input.addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  suggestionBox.innerHTML = "";
+
+  if (!query) {
+    suggestionBox.style.display = "none";
+    return;
+  }
+
+  const matched = suggestions.filter(item =>
+    item.keywords.some(keyword => keyword.includes(query))
+  );
+
+  if (matched.length === 0) {
+    suggestionBox.style.display = "none";
+    return;
+  }
+
+  matched.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "suggestion-item";
+    div.textContent = item.label;
+    div.onclick = () => {
+      window.location.href = item.url;
+    };
+    suggestionBox.appendChild(div);
+  });
+
+  suggestionBox.style.display = "block";
+});
+
+document.addEventListener("click", function (e) {
+  if (!suggestionBox.contains(e.target) && e.target !== input) {
+    suggestionBox.style.display = "none";
+  }
+});
+
+
