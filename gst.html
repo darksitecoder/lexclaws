@@ -30,6 +30,81 @@
       border: 1px solid black;
       padding: 0px 10px;
     }
+    
+    /* Responsive Table Styles */
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .table-responsive table {
+      width: 100%;
+      min-width: 600px;
+      border-collapse: collapse;
+      background: white;
+    }
+    
+    .table-responsive th {
+      background: #f8f9fa;
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 15px;
+      border: 1px solid #dee2e6;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    
+    .table-responsive td {
+      padding: 12px 15px;
+      border: 1px solid #dee2e6;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    
+    .table-responsive tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+    
+    .table-responsive tr:hover {
+      background-color: #e9ecef;
+    }
+    
+    /* Mobile responsive table */
+    @media (max-width: 768px) {
+      .table-responsive {
+        font-size: 14px;
+      }
+      
+      .table-responsive th,
+      .table-responsive td {
+        padding: 8px 10px;
+        min-width: 120px;
+      }
+      
+      .table-responsive table {
+        min-width: 500px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .table-responsive {
+        font-size: 12px;
+      }
+      
+      .table-responsive th,
+      .table-responsive td {
+        padding: 6px 8px;
+        min-width: 100px;
+      }
+      
+      .table-responsive table {
+        min-width: 400px;
+      }
+    }
   </style>
 </head>
 
@@ -73,7 +148,7 @@
 
           <li class="dropdown"><a href="service.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="trademark.html" class="active">GST Registration</a></li>
+              <li><a href="trademark.html" class="active">Trademark Registration</a></li>
               <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
@@ -259,64 +334,66 @@
 
                 <h5>GST Registration Threshold Limits</h5>
                 <p>Eligibility to Register for GST registration online must be verified before registration. Individuals registered under the Pre-GST law should also opt for online GST registration. It is mandatory for businesses that have a turnover of ₹40 lakhs for the sale of goods in normal category states and ₹20 lakhs for the sale of goods in special category states. A company must register as a regular taxable entity under GST law if its annual threshold limit exceeds ₹40 lakhs. The GST council recommends GST rates, tax exemptions, and other tax-related policies. Here is a complete outline for the same</p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Aggregate Turnover</th>
-                      <th>Aggregate Turnover</th>
-                      <th>Applicability</th>
-                    </tr>
-                    <tr>
-                      <th colspan="2">Earlier Limits for Sale of Goods/Providing Services</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Exceeds ₹20 lakh</td>
-                      <td>Yes – For Normal Category States</td>
-                      <td>Upto 31 March 2019</td>
-                    </tr>
-                    <tr>
-                      <td>Exceeds ₹10 lakh</td>
-                      <td>Yes – For Special Category States</td>
-                      <td>Upto 31 March 2019</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">New Limits for Sale of Goods</td>
-                    </tr>
-                    <tr>
-                      <td>Exceeds ₹40 lakh</td>
-                      <td>Yes – For Normal Category States</td>
-                      <td>From 1 April 2019</td>
-                    </tr>
-                    <tr>
-                      <td>Exceeds ₹20 lakh</td>
-                      <td>Yes – For Special Category States</td>
-                      <td>From 1 April 2019</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">New Limits for Providing Services</td>
-                    </tr>
-                    <tr>
-                      <td>Exceeds ₹40 lakh</td>
-                      <td>Yes – For Normal Category States</td>
-                      <td>Upto 31 March 2019</td>
-                    </tr>
-                    <tr>
-                      <td>Exceeds ₹20 lakh</td>
-                      <td>Yes – For Special Category States</td>
-                      <td>Upto 31 March 2019</td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">For Service Providers</td>
-                    </tr>
-                    <tr>
-                      <td>Exceeds ₹20 lakh</td>
-                      <td>Yes – For Normal Category States</td>
-                      <td>From 1 April 2019</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Aggregate Turnover</th>
+                        <th>Aggregate Turnover</th>
+                        <th>Applicability</th>
+                      </tr>
+                      <tr>
+                        <th colspan="2">Earlier Limits for Sale of Goods/Providing Services</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Exceeds ₹20 lakh</td>
+                        <td>Yes – For Normal Category States</td>
+                        <td>Upto 31 March 2019</td>
+                      </tr>
+                      <tr>
+                        <td>Exceeds ₹10 lakh</td>
+                        <td>Yes – For Special Category States</td>
+                        <td>Upto 31 March 2019</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">New Limits for Sale of Goods</td>
+                      </tr>
+                      <tr>
+                        <td>Exceeds ₹40 lakh</td>
+                        <td>Yes – For Normal Category States</td>
+                        <td>From 1 April 2019</td>
+                      </tr>
+                      <tr>
+                        <td>Exceeds ₹20 lakh</td>
+                        <td>Yes – For Special Category States</td>
+                        <td>From 1 April 2019</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">New Limits for Providing Services</td>
+                      </tr>
+                      <tr>
+                        <td>Exceeds ₹40 lakh</td>
+                        <td>Yes – For Normal Category States</td>
+                        <td>Upto 31 March 2019</td>
+                      </tr>
+                      <tr>
+                        <td>Exceeds ₹20 lakh</td>
+                        <td>Yes – For Special Category States</td>
+                        <td>Upto 31 March 2019</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2">For Service Providers</td>
+                      </tr>
+                      <tr>
+                        <td>Exceeds ₹20 lakh</td>
+                        <td>Yes – For Normal Category States</td>
+                        <td>From 1 April 2019</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 <h5>GST Registration Doesn’t Have to Be Complicated.</h5>
                 <p>5,000+ growing businesses have chosen us for GST Registration. Let our experts handle the process accurately.</p>
@@ -330,28 +407,30 @@
                 <p>Turnover Limits for GST Registration</p>
                 <P>GST registration is optional and can be obtained voluntarily by any person or entity, regardless of turnover. However, it becomes mandatory when aggregate turnover exceeds ₹20 lakh for service providers or ₹40 lakh for goods suppliers in most states. For special category states, the limit is ₹10 lakh. Aggregate turnover includes all taxable supplies, exempt supplies, exports, and inter-state supplies calculated on a PAN-India basis. Businesses that need to register can GST apply online through the official portal for a quick and convenient process. To clarify the GST registration thresholds based on sectors and states, here is an overview of the limits:</P>
 
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Sector/Category</th>
-                      <th>Sector/Category	Threshold Limit for GST Registration</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>Manufacturing Sector</th>
-                      <th>₹40 lakhs or higher</th>
-                    </tr>
-                    <tr>
-                      <th>Service Sector</th>
-                      <th>₹20 lakhs or higher</th>
-                    </tr>
-                    <tr>
-                      <th>Special Category States</th>
-                      <th>₹10 lakhs or higher</th>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Sector/Category</th>
+                        <th>Sector/Category	Threshold Limit for GST Registration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Manufacturing Sector</th>
+                        <th>₹40 lakhs or higher</th>
+                      </tr>
+                      <tr>
+                        <th>Service Sector</th>
+                        <th>₹20 lakhs or higher</th>
+                      </tr>
+                      <tr>
+                        <th>Special Category States</th>
+                        <th>₹10 lakhs or higher</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 <ul>
                   <li>Special Category States include Assam, Arunachal Pradesh, Manipur, Jammu & Kashmir, Meghalaya, Nagaland, Mizoram, Sikkim, Tripura, and Uttarakhand.</li>
@@ -416,42 +495,43 @@
                 <h5>Documents Required for GST Registration</h5>
                 <p>The table below outlines the GST registration documents required for different types of entities. Ensuring that all necessary documents are submitted correctly can help speed up the registration process and avoid delays.</p>
 
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Entity Type</th>
-                      <th>Documents Required</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Sole Proprietor / Individual</td>
-                      <td>1. PAN card of the proprietor <br>
-                        2. Aadhaar card <br>
-                        3. Bank account details (cancelled cheque/passbook copy) <br>
-                        4. Address proof (electricity bill/rent agreement)
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>LLP and Partnership Firm</td>
-                      <td>
-                        1. PAN card of the partnership/LLP <br>
-                        2. Partnership deed <br>
-                        3. PAN and Aadhaar cards of partners <br>
-                        4. Bank account details <br>
-                        5. Proof of business address
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>HUF (Hindu Undivided Family)</td>
-                      <td>1. PAN card of HUF <br>
-                        2. PAN and Aadhaar card of the Karta <br>
-                        3. Bank account details <br>
-                        4. Proof of principal place of business
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>Company (Public and Private)	1. PAN card of the company</td>
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Entity Type</th>
+                        <th>Documents Required</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sole Proprietor / Individual</td>
+                        <td>1. PAN card of the proprietor <br>
+                          2. Aadhaar card <br>
+                          3. Bank account details (cancelled cheque/passbook copy) <br>
+                          4. Address proof (electricity bill/rent agreement)
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>LLP and Partnership Firm</td>
+                        <td>
+                          1. PAN card of the partnership/LLP <br>
+                          2. Partnership deed <br>
+                          3. PAN and Aadhaar cards of partners <br>
+                          4. Bank account details <br>
+                          5. Proof of business address
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>HUF (Hindu Undivided Family)</td>
+                        <td>1. PAN card of HUF <br>
+                          2. PAN and Aadhaar card of the Karta <br>
+                          3. Bank account details <br>
+                          4. Proof of principal place of business
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>Company (Public and Private)	1. PAN card of the company</td>
                       <td>
                         1. PAN card of the company <br>
 2. Incorporation certificate <br>
@@ -480,31 +560,33 @@
                 <h5>GST Registration Fees</h5>
                 <p>Below are the details of GST registration fees:</p>
 
-                <table>
-                  <thead>
-                    <th>Type of Applicant</th>
-                    <th>Registration Fee on Government Portal</th>
-                    <th>Additional Requirement</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Most Regular Businesses</td>
-                      <td>₹0 (No Fees)</td>
-                      <td>None</td>
-                    </tr>
-                    <tr>
-                      <td>Casual Taxable Persons</td>
-                      <td>₹0 (Registration) + ₹500–₹10,000 (Deposit)</td>
-                      <td>Security deposit based on business type and state regulations</td>
-                    </tr>
-                    <tr>
-                      <td>Non-Resident Taxable Persons</td>
-                      <td>Non-Resident Taxable Persons	₹0 (Registration) + ₹500–₹10,000 (Deposit)</td>
-                      <td>	Security deposit mandatory for temporary/foreign business setups</td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <th>Type of Applicant</th>
+                      <th>Registration Fee on Government Portal</th>
+                      <th>Additional Requirement</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Most Regular Businesses</td>
+                        <td>₹0 (No Fees)</td>
+                        <td>None</td>
+                      </tr>
+                      <tr>
+                        <td>Casual Taxable Persons</td>
+                        <td>₹0 (Registration) + ₹500–₹10,000 (Deposit)</td>
+                        <td>Security deposit based on business type and state regulations</td>
+                      </tr>
+                      <tr>
+                        <td>Non-Resident Taxable Persons</td>
+                        <td>Non-Resident Taxable Persons	₹0 (Registration) + ₹500–₹10,000 (Deposit)</td>
+                        <td>	Security deposit mandatory for temporary/foreign business setups</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
 
                 <p>Not Sure If You Need to Register for GST?</p>
 

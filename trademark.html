@@ -1,52 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Lex Claws | All in one legal solution</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Lex Claws | All in one legal solution</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link href="assets/img/lexclaws.png" rel="icon" />
+    <link href="assets/img/lexclaws.png" rel="apple-touch-icon" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/lexclaws.png" rel="icon">
-  <link href="assets/img/lexclaws.png" rel="apple-touch-icon">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 0px 10px;
+      }
+      
+      /* Responsive Table Styles */
+      .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .table-responsive table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+        background: white;
+      }
+      
+      .table-responsive th {
+        background: #f8f9fa;
+        font-weight: 600;
+        text-align: left;
+        padding: 12px 15px;
+        border: 1px solid #dee2e6;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      
+      .table-responsive td {
+        padding: 12px 15px;
+        border: 1px solid #dee2e6;
+        vertical-align: top;
+        line-height: 1.5;
+      }
+      
+      .table-responsive tr:nth-child(even) {
+        background-color: #f8f9fa;
+      }
+      
+      .table-responsive tr:hover {
+        background-color: #e9ecef;
+      }
+      
+      /* Mobile responsive table */
+      @media (max-width: 768px) {
+        .table-responsive {
+          font-size: 14px;
+        }
+        
+        .table-responsive th,
+        .table-responsive td {
+          padding: 8px 10px;
+          min-width: 120px;
+        }
+        
+        .table-responsive table {
+          min-width: 500px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .table-responsive {
+          font-size: 12px;
+        }
+        
+        .table-responsive th,
+        .table-responsive td {
+          padding: 6px 8px;
+          min-width: 100px;
+        }
+        
+        .table-responsive table {
+          min-width: 400px;
+        }
+      }
+    </style>
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-<style>
-  table, th, td{
-    border: 1px solid black;
-    padding: 0px 10px;
-  }
-</style>
-</head>
+  <body class="news-details-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo.png" alt="" />
+        </a>
 
-<body class="news-details-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="">
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" >Home</a></li>
-          <!-- <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="about.html">About Us</a></li>
               <li><a href="admissions.html">Admissions</a></li>
@@ -56,7 +144,7 @@
             </ul>
           </li> -->
 
-          <!-- <li><a href="students-life.html">Students Life</a></li>
+            <!-- <li><a href="students-life.html">Students Life</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="alumni.html">Alumni</a></li>
@@ -71,10 +159,18 @@
             </ul>
           </li> -->
 
-          <li class="dropdown"><a href="service.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="trademark.html" class="active">Trademark Registration</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown">
+              <a href="service.html"
+                ><span>Services</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="trademark.html" class="active"
+                    >Trademark Registration</a
+                  >
+                </li>
+                <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -83,107 +179,216 @@
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
               </li> -->
-              <li><a href="copyright.html">Copyright Registration</a></li>
-              <li><a href="#">Patent</a></li>
-              <li><a href="#">Secreterial Services</a></li>
-              <li><a href="#">Direct Tax Services</a></li>
-              <li><a href="gst.html">Indirect Tax Services / GST</a></li>
-              <li><a href="#">Book Keeping / Audi Services</a></li>
-              <li><a href="#">Registration Services</a></li>
-              <li><a href="#">Challan</a></li>
-              <!-- <li><a href="#">Dropdown 4</a></li> -->
-            </ul>
-          </li>
-          <li><a href="#">Bare Acts</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#" class="discover-btn"><div class="form-group d-flex align-items-center">
-            <input type="text" class="" name="subject" id="subject" placeholder="Search Your Query">
-            <i class="bi bi-search fw-bolder fs-5"></i></div></a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-  <!-- Bookmarks Navbar (hidden by default, shown on scroll) -->
-<nav id="bookmarks-navbar" class="navbar navbar-expand-lg navbar-light" data-aos="fade-right" data-aos-delay="100" style="background-color: #e6edf0; display: none; position: fixed; top: 90px; left: 0; right: 0; z-index: 100; width: 90%; border: 2px solid rgb(169, 217, 236); padding: 10px 0; border-radius:20px; margin: auto;">
-  <div class="container-fluid justify-content-center">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bookmarksNavbarContent" aria-controls="bookmarksNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="bookmarksNavbarContent">
-      <ul class="navbar-nav flex-row flex-nowrap gap-2 gap-lg-5 overflow-auto w-100 justify-content-lg-center">
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#introduction">Introduction</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#skeuomorphism">Skeuomorphic Era</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#flat-design">Flat Design</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#material-design">Material Design</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#neumorphism">Neumorphism</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#future">Future</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<style>
-#bookmarks-navbar {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  transition: opacity 0.3s;
-  max-width: 100vw;
-}
-#bookmarks-navbar.visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-#bookmarks-navbar .navbar-nav {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-#bookmarks-navbar .nav-link {
-  color: #333;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  transition: background 0.2s, color 0.2s;
-  white-space: nowrap;
-}
-#bookmarks-navbar .nav-link.active,
-#bookmarks-navbar .nav-link:hover {
-  background: #007bff;
-  color: #fff;
-}
-@media (max-width: 991.98px) {
-  #bookmarks-navbar {
-    top: 56px;
-    border-radius: 0 0 20px 20px;
-    padding: 6px 0;
-  }
-  #bookmarks-navbar .navbar-nav {
-    gap: 0.5rem !important;
-  }
-}
-</style>
-  <main class="main ">
-
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Trademark</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Trademark</li>
-          </ol>
+                <li><a href="copyright.html">Copyright Registration</a></li>
+                <li><a href="#">Patent</a></li>
+                <li><a href="#">Secreterial Services</a></li>
+                <li><a href="#">Direct Tax Services</a></li>
+                <li><a href="gst.html">Indirect Tax Services / GST</a></li>
+                <li><a href="#">Book Keeping / Audi Services</a></li>
+                <li><a href="#">Registration Services</a></li>
+                <li><a href="#">Challan</a></li>
+                <!-- <li><a href="#">Dropdown 4</a></li> -->
+              </ul>
+            </li>
+            <li><a href="#">Bare Acts</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="#" class="discover-btn"
+                ><div class="form-group d-flex align-items-center">
+                  <input
+                    type="text"
+                    class=""
+                    name="subject"
+                    id="subject"
+                    placeholder="Search Your Query"
+                  />
+                  <i class="bi bi-search fw-bolder fs-5"></i></div
+              ></a>
+            </li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </header>
+    <!-- Bookmarks Navbar (hidden by default, shown on scroll) -->
+    <nav
+      id="bookmarks-navbar"
+      class="navbar navbar-expand-lg navbar-light"
+      data-aos="fade-right"
+      data-aos-delay="100"
+      style="
+        background-color: #e6edf0;
+        display: none;
+        position: fixed;
+        top: 90px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        width: 90%;
+        border: 2px solid rgb(169, 217, 236);
+        padding: 10px 0;
+        border-radius: 20px;
+        margin: auto;
+      "
+    >
+      <div class="container-fluid justify-content-center">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#bookmarksNavbarContent"
+          aria-controls="bookmarksNavbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="bookmarksNavbarContent" style="overflow: auto;">
+          <ul
+            class="navbar-nav flex-row flex-nowrap gap-2 gap-lg-5 overflow-auto w-100 justify-content-lg-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link reg fw-bold fs-6" style="visibility: hidden; width:800px ;" href="#registration"
+                >Trademark Registration
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#registration"
+                >Trademark Registration
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#types"
+                >Types of Trademarks
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#fees"
+                >Registration Fees</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#document"
+                >Documents Required
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#benefits">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#renewal"
+                >Trademark Renewal Process</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#objection"
+                >Trademark Objection</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#hearing"
+                >Objection Hearing
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-6" href="#why"
+                >Why Choose “LEX CLAWS”</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <style>
+      #bookmarks-navbar {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        transition: opacity 0.3s;
+        max-width: 100vw;
+        overflow: hidden;
+      }
+      #bookmarks-navbar.visible {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      #bookmarks-navbar .navbar-nav {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: #007bff #e6edf0;
+        padding: 0 10px;
+        /* cursor: grab; */
+      }
+      #bookmarks-navbar .navbar-nav::-webkit-scrollbar {
+        height: 6px;
+      }
+      #bookmarks-navbar .navbar-nav::-webkit-scrollbar-track {
+        background: #e6edf0;
+        border-radius: 3px;
+      }
+      #bookmarks-navbar .navbar-nav::-webkit-scrollbar-thumb {
+        background: #007bff;
+        border-radius: 3px;
+      }
+      #bookmarks-navbar .navbar-nav::-webkit-scrollbar-thumb:hover {
+        background: #0056b3;
+      }
+      #bookmarks-navbar .nav-link {
+        color: #333;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: background 0.2s, color 0.2s;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+      }
+      #bookmarks-navbar .nav-link.active,
+      #bookmarks-navbar .nav-link:hover {
+        background: #007bff;
+        color: #fff;
+      }
+      @media (max-width: 991.98px) {
+        #bookmarks-navbar {
+          top: 56px;
+          border-radius: 0 0 20px 20px;
+          padding: 6px 0;
+        }
+        #bookmarks-navbar .navbar-nav {
+          gap: 0.5rem !important;
+        }
+       
+      }
+      @media only screen and (max-width: 600px) {
+        .reg{
+          width: 10px !important;
+        }
+      }
+    </style>
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title light-background">
+        <div
+          class="container d-lg-flex justify-content-between align-items-center"
+        >
+          <h1 class="mb-2 mb-lg-0">Trademark</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Trademark</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
 
-    <!-- Blog Details Section -->
-    <section id="blog-details" class="blog-details section">
-      <div class="container" data-aos="fade-up">
-
-        <article class="article">
-          <!-- <div class="article-header">
+      <!-- Blog Details Section -->
+      <section id="blog-details" class="blog-details section">
+        <div class="container" data-aos="fade-up">
+          <article class="article">
+            <!-- <div class="article-header">
             <div class="meta-categories" data-aos="fade-up">
               <a href="#" class="category">Technology</a>
               <a href="#" class="category">Innovation</a>
@@ -207,259 +412,400 @@
             </div>
           </div> -->
 
-          <!-- <div class="article-featured-image" data-aos="zoom-in">
+            <!-- <div class="article-featured-image" data-aos="zoom-in">
             <img src="assets/img/blog/blog-hero-1.webp" alt="UI Design Evolution" class="img-fluid">
           </div> -->
 
-          <div class="article-wrapper">
-            
+            <div class="article-wrapper">
+              <div class="article-content">
+                <h1>Trademark Registration in India</h1>
+                <div
+                  class="content-section"
+                  id="registration"
+                  data-aos="fade-up"
+                >
+                  <p class="lead">
+                    Trademark registration is the process of securing exclusive
+                    legal rights to your brand name, logo, or symbol. In India,
+                    trademark registration is governed under the Trade Marks
+                    Act, 1999, allowing you to defend and exclusively use your
+                    intellectual property in the marketplace.
+                  </p>
 
-            <div class="article-content">
-              <h1>Trademark Registration in India</h1>
-              <div class="content-section" id="introduction" data-aos="fade-up">
-                <p class="lead">
-                  Trademark registration is the process of securing exclusive legal rights to your brand name, logo, or symbol. In India, trademark registration is governed under the Trade Marks Act, 1999, allowing you to defend and exclusively use your intellectual property in the marketplace.
-                </p>
+                  <p>
+                    The trademark application process involves submitting Form
+                    TM-A to the Trademark Office and selecting the correct class
+                    for your goods or services. This ensures that your brand is
+                    appropriately protected. Upon registration, you can use the
+                    ® symbol, signifying that your trademark is legally
+                    recognized.
+                  </p>
+                  <p>
+                    At “LEX CLAWS”, we simplify the trademark registration
+                    process, offering expert guidance through trademark
+                    searches, addressing any oppositions, and assisting with
+                    renewals. Our experienced trademark attorneys help secure
+                    your trademark certificate and ensure your intellectual
+                    property is safeguarded, laying a solid legal foundation for
+                    your brand’s identity.
+                  </p>
 
-                <p>
-                  The trademark application process involves submitting Form TM-A to the Trademark Office and selecting the correct class for your goods or services. This ensures that your brand is appropriately protected. Upon registration, you can use the ® symbol, signifying that your trademark is legally recognized.
-                </p>
-                <p>
-                  At “LEX CLAWS”, we simplify the trademark registration process, offering expert guidance through trademark searches, addressing any oppositions, and assisting with renewals. Our experienced trademark attorneys help secure your trademark certificate and ensure your intellectual property is safeguarded, laying a solid legal foundation for your brand’s identity.
-                </p>
-
-                <!-- <div class="highlight-quote">
+                  <!-- <div class="highlight-quote">
                   <blockquote>
                     <p>Design is not just what it looks like and feels like. Design is how it works.</p>
                     <cite>Steve Jobs</cite>
                   </blockquote>
                 </div> -->
-              </div>
+                </div>
 
-              <div class="content-section" id="skeuomorphism" data-aos="fade-up">
-                <h2>What is a Trademark?</h2>
-                <p>
-                  A trademark is a type of intellectual property that includes a word, phrase, symbol, design, or combination of these elements, used to identify and distinguish the goods or services of one entity from others. Under the Trade Marks Act, 1999, a trademark can also encompass the shape of goods, packaging, or color combinations, provided it can be graphically represented and is capable of differentiating one product or service from another.
-                </p>
+                <div
+                  class="content-section"
+                  id="skeuomorphism"
+                  data-aos="fade-up"
+                >
+                  <h2>What is a Trademark?</h2>
+                  <p>
+                    A trademark is a type of intellectual property that includes
+                    a word, phrase, symbol, design, or combination of these
+                    elements, used to identify and distinguish the goods or
+                    services of one entity from others. Under the Trade Marks
+                    Act, 1999, a trademark can also encompass the shape of
+                    goods, packaging, or color combinations, provided it can be
+                    graphically represented and is capable of differentiating
+                    one product or service from another.
+                  </p>
+                </div>
 
-              
-              </div>
+                <div
+                  class="content-section"
+                  id="flat-design"
+                  data-aos="fade-up"
+                >
+                  <h3>Trademark Act of 1999</h3>
+                  <p>
+                    The Trademarks Act of 1999 outlines the rules and
+                    regulations for registration, assignment, and trademark
+                    protection. The Indian Trademarks Act, 1999 is administered
+                    by the Controller General of Patents, Designs, and
+                    Trademarks under the Ministry of Commerce and Industry of
+                    the government of India.
+                  </p>
+                  <h2>Why Should You Register Trademark?</h2>
+                  <p>
+                    Trademark registration in India offers legal protection,
+                    helping the owner to pursue legal action against
+                    infringement and unauthorized trademark use. According to
+                    the Trademark Act of 1999, a registered trademark is valid
+                    for 10 years from the filing date. You must renew it
+                    thereafter to ensure ongoing brand protection. Here are a
+                    few other reasons to register a trademark:
+                  </p>
 
-              <div class="content-section" id="flat-design" data-aos="fade-up">
-                <h3>Trademark Act of 1999</h3>
-                <p>
-                  The Trademarks Act of 1999 outlines the rules and regulations for registration, assignment, and trademark protection. The Indian Trademarks Act, 1999 is administered by the Controller General of Patents, Designs, and Trademarks under the Ministry of Commerce and Industry of the government of India.
-                </p>
-                <h2>Why Should You Register Trademark?</h2>
-                <p>
-                  Trademark registration in India offers legal protection, helping the owner to pursue legal action against infringement and unauthorized trademark use. According to the Trademark Act of 1999, a registered trademark is valid for 10 years from the filing date. You must renew it thereafter to ensure ongoing brand protection. Here are a few other reasons to register a trademark:
-                </p>
-
-                <div class="comparison-grid">
-                  <div class="row g-4">
-                    <div class="col-md-12">
-                      <div class="comparison-card">
-                        <ul>
-                          <li>Registering your trademark with the trademark registry establishes an official public record of your ownership through publications in the trademark journal.</li>
-                          <li>It distinguishes your brand from competitors, boosting recognition.</li>
-                          <li>As registered trademarks are associated with quality, it build customer trust.</li>
-                          <li>Increases the business value, attracting investors and partners</li>
-                          <li>Protects against counterfeiting and imitation</li>
-                          <li>Allows you to license your trademark to others</li>
-                          <li>Lets you use the ® symbol, boosting brand credibility.</li>
-                          <li>Becomes a valuable, marketable business asset.</li>
-                        </ul>
+                  <div class="comparison-grid">
+                    <div class="row g-4">
+                      <div class="col-md-12">
+                        <div class="comparison-card">
+                          <ul>
+                            <li>
+                              Registering your trademark with the trademark
+                              registry establishes an official public record of
+                              your ownership through publications in the
+                              trademark journal.
+                            </li>
+                            <li>
+                              It distinguishes your brand from competitors,
+                              boosting recognition.
+                            </li>
+                            <li>
+                              As registered trademarks are associated with
+                              quality, it build customer trust.
+                            </li>
+                            <li>
+                              Increases the business value, attracting investors
+                              and partners
+                            </li>
+                            <li>
+                              Protects against counterfeiting and imitation
+                            </li>
+                            <li>
+                              Allows you to license your trademark to others
+                            </li>
+                            <li>
+                              Lets you use the ® symbol, boosting brand
+                              credibility.
+                            </li>
+                            <li>
+                              Becomes a valuable, marketable business asset.
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                   
                   </div>
                 </div>
-              </div>
-              <div class="content-section" id="flat-design" data-aos="fade-up">
-                <h3>Who can apply for a Trademark Registration Online?</h3>
-                <p>
-                  The person or entity listed as the applicant in the registration form will be considered a trademark owner. The following entities can apply for trademark registration online:
-                </p>
+                <div
+                  class="content-section"
+                  id="flat-design"
+                  data-aos="fade-up"
+                >
+                  <h3>Who can apply for a Trademark Registration Online?</h3>
+                  <p>
+                    The person or entity listed as the applicant in the
+                    registration form will be considered a trademark owner. The
+                    following entities can apply for trademark registration
+                    online:
+                  </p>
 
-                <div class="comparison-grid">
-                  <div class="row g-4">
-                    <div class="col-md-12">
-                      <div class="comparison-card">
-                        <ul>
-                          <li>Individuals</li>
-                          <li>Joint owners of a company</li>
-                          <li>Proprietorship firms</li>
-                          <li>Partnership firms (with a maximum of ten partners)</li>
-                          <li>Limited Liability Partnerships (LLPs)</li>
-                          <li>Indian companies</li>
-                          <li>Foreign companies</li>
-                          <li>Trusts</li>
-                          <li>Societies</li>
-                        </ul>
+                  <div class="comparison-grid">
+                    <div class="row g-4">
+                      <div class="col-md-12">
+                        <div class="comparison-card">
+                          <ul>
+                            <li>Individuals</li>
+                            <li>Joint owners of a company</li>
+                            <li>Proprietorship firms</li>
+                            <li>
+                              Partnership firms (with a maximum of ten partners)
+                            </li>
+                            <li>Limited Liability Partnerships (LLPs)</li>
+                            <li>Indian companies</li>
+                            <li>Foreign companies</li>
+                            <li>Trusts</li>
+                            <li>Societies</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                   
                   </div>
                 </div>
-              </div>
 
-              <div class="content-section" id="material-design" data-aos="fade-up">
-                <h2>Types of Trademarks in India</h2>
-                <p>
-                  Trademarks are categorized into different types, each dedicated to distinguishing goods and services. Here's a breakdown of the different types of trademarks registered in India: </p>
+                <div
+                  class="content-section"
+                  id="types"
+                  data-aos="fade-up"
+                >
+                  <h2>Types of Trademarks in India</h2>
+                  <p>
+                    Trademarks are categorized into different types, each
+                    dedicated to distinguishing goods and services. Here's a
+                    breakdown of the different types of trademarks registered in
+                    India:
+                  </p>
                   <h5 class="fw-bold">Product Mark</h5>
-                  <p> Identifies and distinguishes goods rather than services. This includes brand names, logos, or symbols.
-                  The best example is ‘Nestle.’
-                </p>
-
-                <h5 class="fw-bold">Service Mark</h5>
-                <p>These marks outline services provided by a company. Brand names or logos identifying a service are called service marks.
-                  For example ‘United Airlines’, ‘Fly the Friendly Skies’, the logo of a world map
-                  </p>
-                <h5 class="fw-bold">Certification Mark</h5>
-                <p>This indicates that a product or service meets specific standards.
-                  The best example will be the ISI (Indian Standard Institute) mark and the FSSAI mark.
-                  </p>
-                <h5 class="fw-bold">Collective Mark</h5>
-                <p>Used by a group or association to identify goods and services from its members.
-                  Example: CII (Confederation of Indian Industry).
-                  </p>
-                <h5 class="fw-bold">Shape Mark</h5>
-                <p>Protects the distinctive shape of a product or its packaging.
-                  Example: Coca-Cola bottle, Fanta bottle
-                  </p>
-                <h5 class="fw-bold">Pattern Mark</h5>
-                <p>Protects distinctive patterns or designs used on products or packaging.
-                  Example: The distinctive pattern on a brand's packaging
-                  </p>
-                <h5 class="fw-bold">Sound Mark</h5>
-                <p>Protects a distinctive sound identifying a brand.
-                  An example is Yahoo's yodel, the theme song of the National Stock Exchange.
-                  </p>
-                <h5 class="fw-bold">Symbol Mark</h5>
-                <p>Protects unique visual symbols identifying a product or service.</p>
-                <h5 class="fw-bold">Color Mark</h5>
-                <p>Protect specific colors or color combinations.
-                  Example: Tiffany blue.
-                  </p>
-                <h5 class="fw-bold">
-                  Motion Mark
-                  </h5>
-                <p>Protects animated graphics or short videos.
-                  Example: Paramount Pictures logo.
+                  <p>
+                    Identifies and distinguishes goods rather than services.
+                    This includes brand names, logos, or symbols. The best
+                    example is ‘Nestle.’
                   </p>
 
-                <div class="key-principles">
-                  <div class="principle">
-                    <span class="number">01</span>
-                    <h4>Physical Properties</h4>
-                    <p>Surfaces and edges provide meaningful interaction cues</p>
-                  </div>
-                  <div class="principle">
-                    <span class="number">02</span>
-                    <h4>Bold Graphics</h4>
-                    <p>Deliberate color choices and intentional white space</p>
-                  </div>
-                  <div class="principle">
-                    <span class="number">03</span>
-                    <h4>Meaningful Motion</h4>
-                    <p>Animation informs and reinforces user actions</p>
-                  </div>
+                  <h5 class="fw-bold">Service Mark</h5>
+                  <p>
+                    These marks outline services provided by a company. Brand
+                    names or logos identifying a service are called service
+                    marks. For example ‘United Airlines’, ‘Fly the Friendly
+                    Skies’, the logo of a world map
+                  </p>
+                  <h5 class="fw-bold">Certification Mark</h5>
+                  <p>
+                    This indicates that a product or service meets specific
+                    standards. The best example will be the ISI (Indian Standard
+                    Institute) mark and the FSSAI mark.
+                  </p>
+                  <h5 class="fw-bold">Collective Mark</h5>
+                  <p>
+                    Used by a group or association to identify goods and
+                    services from its members. Example: CII (Confederation of
+                    Indian Industry).
+                  </p>
+                  <h5 class="fw-bold">Shape Mark</h5>
+                  <p>
+                    Protects the distinctive shape of a product or its
+                    packaging. Example: Coca-Cola bottle, Fanta bottle
+                  </p>
+                  <h5 class="fw-bold">Pattern Mark</h5>
+                  <p>
+                    Protects distinctive patterns or designs used on products or
+                    packaging. Example: The distinctive pattern on a brand's
+                    packaging
+                  </p>
+                  <h5 class="fw-bold">Sound Mark</h5>
+                  <p>
+                    Protects a distinctive sound identifying a brand. An example
+                    is Yahoo's yodel, the theme song of the National Stock
+                    Exchange.
+                  </p>
+                  <h5 class="fw-bold">Symbol Mark</h5>
+                  <p>
+                    Protects unique visual symbols identifying a product or
+                    service.
+                  </p>
+                  <h5 class="fw-bold">Color Mark</h5>
+                  <p>
+                    Protect specific colors or color combinations. Example:
+                    Tiffany blue.
+                  </p>
+                  <h5 class="fw-bold">Motion Mark</h5>
+                  <p>
+                    Protects animated graphics or short videos. Example:
+                    Paramount Pictures logo.
+                  </p>
+
+                  <!-- <div class="key-principles">
+                    <div class="principle">
+                      <span class="number">01</span>
+                      <h4>Physical Properties</h4>
+                      <p>
+                        Surfaces and edges provide meaningful interaction cues
+                      </p>
+                    </div>
+                    <div class="principle">
+                      <span class="number">02</span>
+                      <h4>Bold Graphics</h4>
+                      <p>
+                        Deliberate color choices and intentional white space
+                      </p>
+                    </div>
+                    <div class="principle">
+                      <span class="number">03</span>
+                      <h4>Meaningful Motion</h4>
+                      <p>Animation informs and reinforces user actions</p>
+                    </div>
+                  </div> -->
                 </div>
-              </div>
-              <div class="content-section" id="material-design" data-aos="fade-up">
-                <h2>Trademark Symbols</h2>
-                <p>
-                  Trademark symbols are visual indicators used to show whether a trademark is registered or unregistered. The most common symbols are TM (™), R (®), and SM (℠).</p>
+                <div
+                  class="content-section"
+                  id="material-design"
+                  data-aos="fade-up"
+                >
+                  <h2>Trademark Symbols</h2>
+                  <p>
+                    Trademark symbols are visual indicators used to show whether
+                    a trademark is registered or unregistered. The most common
+                    symbols are TM (™), R (®), and SM (℠).
+                  </p>
                   <h5 class="fw-bold">TM Symbol (™)</h5>
-                  <p>The ™ symbol is used by brands that have filed for trademark application and the application is in process. The symbol can be used for both services and goods. It serves as an indication that warns infringers.</p>
+                  <p>
+                    The ™ symbol is used by brands that have filed for trademark
+                    application and the application is in process. The symbol
+                    can be used for both services and goods. It serves as an
+                    indication that warns infringers.
+                  </p>
 
-                <h5 class="fw-bold">R Symbol (®)</h5>
-                <p>This symbol denotes that the trademark is officially registered with the Registrar of Trademarks. If copied, the trademark owners can take legal action against the infringers.</p>
-                <h5 class="fw-bold">SM Symbol (℠)</h5>
-                <p>This symbol is used for unregistered service marks. It identifies and distinguishes the service just like the ™ mark.</p>
-                
-               
-              </div>
+                  <h5 class="fw-bold">R Symbol (®)</h5>
+                  <p>
+                    This symbol denotes that the trademark is officially
+                    registered with the Registrar of Trademarks. If copied, the
+                    trademark owners can take legal action against the
+                    infringers.
+                  </p>
+                  <h5 class="fw-bold">SM Symbol (℠)</h5>
+                  <p>
+                    This symbol is used for unregistered service marks. It
+                    identifies and distinguishes the service just like the ™
+                    mark.
+                  </p>
+                </div>
 
-              <div class="content-section" id="neumorphism" data-aos="fade-up">
-                <h2>Trademark Registration Fees</h2>
-                <p>
-                  Trademark registration with “LEX CLAWS” is simple and affordable. Govt. fees are ₹4,500/class (e-filing) for individuals, startups & MSMEs, and ₹9,000/class for companies & LLPs. Physical filing costs slightly more. “LEX CLAWS” ensures quick, expert filing support.
-                </p>
+                <div
+                  class="content-section"
+                  id="fees"
+                  data-aos="fade-up"
+                >
+                  <h2>Trademark Registration Fees</h2>
+                  <p>
+                    Trademark registration with “LEX CLAWS” is simple and
+                    affordable. Govt. fees are ₹4,500/class (e-filing) for
+                    individuals, startups & MSMEs, and ₹9,000/class for
+                    companies & LLPs. Physical filing costs slightly more. “LEX
+                    CLAWS” ensures quick, expert filing support.
+                  </p>
+                </div>
 
-                
-              </div>
+                <div class="content-section" id="document" data-aos="fade-up">
+                  <h2>
+                    Documents Required for Trademark Registration in India
+                  </h2>
+                  <p>
+                    To register a trademark in India, you need Form TM-A, proof
+                    of identity and address for the applicant, a logo copy (if
+                    applicable), incorporation or partnership deeds, and, in
+                    some cases, a Udyog Aadhar Registration Certificate. Here's
+                    a more detailed breakdown:
+                  </p>
 
-              <div class="content-section" id="future" data-aos="fade-up">
-                <h2>Documents Required for Trademark Registration in India</h2>
-                <p>
-                  To register a trademark in India, you need Form TM-A, proof of identity and address for the applicant, a logo copy (if applicable), incorporation or partnership deeds, and, in some cases, a Udyog Aadhar Registration Certificate. Here's a more detailed breakdown:
-                </p>
+                  <div class="table-responsive">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Applicant Type</th>
+                          <th>Documents Required for Trademark Registration</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Individuals & Sole Proprietorship</td>
+                          <td>
+                            1. Form TM-A <br />
+                            2. Logo (if applicable) <br />
+                            3. Power of Attorney (Form-48) <br />
+                            4. Identity Proof like an Aadhar card, PAN card,
+                            Passport, or Driving License <br />
+                            5. Address Proof like a utility bill, bank statement,
+                            or voter ID <br />
+                            6. User Affidavit <br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Partnership Firms</td>
+                          <td>
+                            1. Form TM-A <br />
+                            2. Logo (if applicable) <br />
+                            3. Power of Attorney (Form-48) <br />
+                            4. Partnership Deed / Firm <br />Registration
+                            Certificate 5. Identity & Address Proof of Signatory
+                            <br />
+                            6. User Affidavit <br />
+                            7. MSME Certificate <br />
+                            8. Startup Recognition <br />Certificate (DPIIT)
+                            <br />
+                            9. Partnership PAN Card <br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Companies (Private Ltd., Public Ltd., or LLPs)</td>
+                          <td>
+                            1. Form TM-A <br />
+                            2. Incorporation Certificate or LLP deed <br />
+                            3. Power of Attorney (Form-48) <br />
+                            4. Logo (if applicable) <br />
+                            5. Identity & Address Proof of Authorized Signatory
+                            <br />
+                            6. User Affidavit <br />
+                            7. MSME Certificate (if applicable) <br />
+                            8. Startup Recognition Certificate (DPIIT) <br />
+                            9. Company PAN Card or LLP PAN Card
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Other Applicants (Trusts, NGOs, etc.)</td>
+                          <td>
+                            1. Form TM-A <br />
+                            2. Logo (if applicable) <br />
+                            3. Incorporation Certificate <br />
+                            4. Power of Attorney (Form-48) <br />
+                            5. Identity & Address Proof of Authorized Signatory
+                            <br />
+                            6. User Affidavit <br />
+                            7. Trust PAN Card <br />
+                            8. Trust Deed <br />
+                            9. GST Certificate
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
 
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Applicant Type</th>
-                      <th>Documents Required for Trademark Registration</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Individuals & Sole Proprietorship</td>
-                      <td>
-                        1. Form TM-A <br>
-2. Logo (if applicable) <br>
-3. Power of Attorney (Form-48) <br>
-4. Identity Proof like an Aadhar card, PAN card, Passport, or Driving License <br>
-5. Address Proof like a utility bill, bank statement, or voter ID <br>
-6. User Affidavit <br>
-
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Partnership Firms</td>
-                      <td>1. Form TM-A <br>
-                        2. Logo (if applicable) <br>
-                        3. Power of Attorney (Form-48) <br>
-                        4. Partnership Deed / Firm  <br>Registration Certificate
-                        5. Identity & Address Proof of Signatory <br>
-                        6. User Affidavit <br>
-                        7. MSME Certificate <br>
-                        8. Startup Recognition  <br>Certificate (DPIIT) <br>
-                        9. Partnership PAN Card <br>
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>Companies (Private Ltd., Public Ltd., or LLPs)</td>
-                      <td>1. Form TM-A <br>
-                        2. Incorporation Certificate or LLP deed <br>
-                        3. Power of Attorney (Form-48) <br>
-                        4. Logo (if applicable) <br>
-                        5. Identity & Address Proof of Authorized Signatory <br>
-                        6. User Affidavit <br>
-                        7. MSME Certificate (if applicable) <br>
-                        8. Startup Recognition Certificate (DPIIT) <br>
-                        9. Company PAN Card or LLP PAN Card
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>Other Applicants (Trusts, NGOs, etc.)</td>
-                      <td>1. Form TM-A <br>
-                        2. Logo (if applicable) <br>
-                        3. Incorporation Certificate <br>
-                        4. Power of Attorney (Form-48) <br>
-                        5. Identity & Address Proof of Authorized Signatory <br>
-                        6. User Affidavit <br>
-                        7. Trust PAN Card <br>
-                        8. Trust Deed <br>
-                        9. GST Certificate
-                        </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-                <!-- <div class="future-trends">
+                  <!-- <div class="future-trends">
                   <div class="trend">
                     <i class="bi bi-phone"></i>
                     <h4>Adaptive Interfaces</h4>
@@ -476,67 +822,149 @@
                     <p>Advanced motion and gesture-based interactions</p>
                   </div>
                 </div> -->
-              </div>
-              <div class="content-section" id="material-design" data-aos="fade-up">
-                <h2>Benefits of Trademark Registration</h2>
-                <p>
-                  Trademark registration provides legal protection, grants exclusive rights, and differentiates products and services from competitors. It builds goodwill, establishes a valuable business asset, and facilitates global expansion, enhancing brand strength.</p>
-                  <h5 class="fw-bold">Exclusive Rights & Legal Protection</h5>
-                  <p>Trademark registration grants you exclusive rights to use the mark for your specific products and services, preventing unauthorized trademark use
-                </p>
-
-                <h5 class="fw-bold">Brand Building & Recognition</h5>
-                <p>A trademark helps differentiate products and services, creating a unique brand identity. Trademark registration improves consumer trust, loyalty, and brand recognition.</p>
-
-                <h5 class="fw-bold">Helps in the Creation of an Asset</h5>
-                <p>A registered trademark is a valuable asset that can be licensed, sold, or used for financing. It protects the brand owner's investment by preventing others from using a similar name or logo. It increases brand value, making it more attractive to investors.</p>
-                <h5 class="fw-bold">Usage of Ⓡ Symbol</h5>
-                <p>You can use the ® symbol once your trademark is registered, signaling that it is a registered trademark, adding credibility and protection</p>
-                <h5 class="fw-bold">Protection Against Infringement</h5>
-                <p>A registered trademark helps prevent trademark infringement and gives you legal grounds for trademark opposition in case of disputes</p>
-                <h5 class="fw-bold">Protection For Ten Years</h5>
-                <p>Trademark registration is valid for ten years, ensuring long-term protection for your brand name registration</p>
-
-                <h5 class="fw-bold">Global Trademark Registration</h5>
-                <p>International trademark registration is facilitated, allowing for protection in other countries through international treaties like the Madrid Protocol and Vienna Codification</p>
-                <h5 class="fw-bold">Attract Customers</h5>
-                <p>Brand registration makes your brand stand out, attracting more customers by providing confidence in the authenticity of your brand name registration</p>
-
-                <h2>Post-Registration Procedures</h2>
-                <p>After trademark registration, key post-registration steps include renewal every 10 years, amendments via Form TM-P, and handling any oppositions within the set time. Transfers or assignments must be registered through Form TM-P. Regular trademark registration checks are recommended to check for potential infringements.
+                </div>
+                <div
+                  class="content-section"
+                  id="benefits"
+                  data-aos="fade-up"
+                >
+                  <h2>Benefits of Trademark Registration</h2>
+                  <p>
+                    Trademark registration provides legal protection, grants
+                    exclusive rights, and differentiates products and services
+                    from competitors. It builds goodwill, establishes a valuable
+                    business asset, and facilitates global expansion, enhancing
+                    brand strength.
                   </p>
-                <h2>
-                  Trademark Renewal Process
-                  </h2>
-                <p>For renewing the registered trademark, the owner must file Form TM-R with the Trademark Registry, along with the required fees, with the following documents</p>
+                  <h5 class="fw-bold">Exclusive Rights & Legal Protection</h5>
+                  <p>
+                    Trademark registration grants you exclusive rights to use
+                    the mark for your specific products and services, preventing
+                    unauthorized trademark use
+                  </p>
+
+                  <h5 class="fw-bold">Brand Building & Recognition</h5>
+                  <p>
+                    A trademark helps differentiate products and services,
+                    creating a unique brand identity. Trademark registration
+                    improves consumer trust, loyalty, and brand recognition.
+                  </p>
+
+                  <h5 class="fw-bold">Helps in the Creation of an Asset</h5>
+                  <p>
+                    A registered trademark is a valuable asset that can be
+                    licensed, sold, or used for financing. It protects the brand
+                    owner's investment by preventing others from using a similar
+                    name or logo. It increases brand value, making it more
+                    attractive to investors.
+                  </p>
+                  <h5 class="fw-bold">Usage of Ⓡ Symbol</h5>
+                  <p>
+                    You can use the ® symbol once your trademark is registered,
+                    signaling that it is a registered trademark, adding
+                    credibility and protection
+                  </p>
+                  <h5 class="fw-bold">Protection Against Infringement</h5>
+                  <p>
+                    A registered trademark helps prevent trademark infringement
+                    and gives you legal grounds for trademark opposition in case
+                    of disputes
+                  </p>
+                  <h5 class="fw-bold">Protection For Ten Years</h5>
+                  <p>
+                    Trademark registration is valid for ten years, ensuring
+                    long-term protection for your brand name registration
+                  </p>
+
+                  <h5 class="fw-bold">Global Trademark Registration</h5>
+                  <p>
+                    International trademark registration is facilitated,
+                    allowing for protection in other countries through
+                    international treaties like the Madrid Protocol and Vienna
+                    Codification
+                  </p>
+                  <h5 class="fw-bold">Attract Customers</h5>
+                  <p>
+                    Brand registration makes your brand stand out, attracting
+                    more customers by providing confidence in the authenticity
+                    of your brand name registration
+                  </p>
+
+                  <h2>Post-Registration Procedures</h2>
+                  <p>
+                    After trademark registration, key post-registration steps
+                    include renewal every 10 years, amendments via Form TM-P,
+                    and handling any oppositions within the set time. Transfers
+                    or assignments must be registered through Form TM-P. Regular
+                    trademark registration checks are recommended to check for
+                    potential infringements.
+                  </p>
+                  <h2 id="renewal">Trademark Renewal Process</h2>
+                  <p>
+                    For renewing the registered trademark, the owner must file
+                    Form TM-R with the Trademark Registry, along with the
+                    required fees, with the following documents
+                  </p>
                   <ul>
                     <li>Form TM-R: For trademark renewal application</li>
-                    <li>Trademark Certificate: A Certified copy of the original registration certificate</li>
-                    <li>TM-A Form: Certified copy (or original) of the initial registration form</li>
-                    <li>ID & Address Proof: Government-issued photo ID and proof of residence</li>
+                    <li>
+                      Trademark Certificate: A Certified copy of the original
+                      registration certificate
+                    </li>
+                    <li>
+                      TM-A Form: Certified copy (or original) of the initial
+                      registration form
+                    </li>
+                    <li>
+                      ID & Address Proof: Government-issued photo ID and proof
+                      of residence
+                    </li>
                     <li>Power of Attorney: If represented by an agent.</li>
                   </ul>
-                  <p>Trademark Renewal deadline: The renewal application must be filed within six months before the trademark registration expires or within six months after the expiry with a surcharge.</p>
+                  <p>
+                    Trademark Renewal deadline: The renewal application must be
+                    filed within six months before the trademark registration
+                    expires or within six months after the expiry with a
+                    surcharge.
+                  </p>
 
                   <h5 class="fw-bold">Trademark Renewal Fees</h5>
                   <ul>
                     <li>E-filing: ₹9,000 per class</li>
                     <li>Physical Filing: ₹10,000 per class</li>
-                    <li>Late Renewal Surcharge: ₹4,500 (added to the renewal fee)</li>
+                    <li>
+                      Late Renewal Surcharge: ₹4,500 (added to the renewal fee)
+                    </li>
                     <li>Restoration Fee: ₹9,000 (added to the renewal fee)</li>
                   </ul>
 
                   <h2>Trademark Rectification and Cancellation</h2>
-                  <p>Trademark rectification and cancellation is a legal process under the Trademarks Act of 1999 for dealing with a problem with a registered trademark. Rectification helps to fix mistakes or lapses, while cancellation is for deletion of the trademark from the register.</p>
+                  <p>
+                    Trademark rectification and cancellation is a legal process
+                    under the Trademarks Act of 1999 for dealing with a problem
+                    with a registered trademark. Rectification helps to fix
+                    mistakes or lapses, while cancellation is for deletion of
+                    the trademark from the register.
+                  </p>
 
-                  <h2>
-                    Trademark Rectification
-                  </h2>
+                  <h2>Trademark Rectification</h2>
                   <ul>
-                    <li>Object: Fixing mistakes or omissions in the trademark register.</li>
-                    <li>Reasons: Errors, non-use, or breach of conditions of trademark.</li>
-                    <li>Procedure: Submit Form TM-26 to the Trademark Registry with evidence.</li>
-                    <li>Who Can Submit: Any interested party affected by the trademark registration.</li>
+                    <li>
+                      Object: Fixing mistakes or omissions in the trademark
+                      register.
+                    </li>
+                    <li>
+                      Reasons: Errors, non-use, or breach of conditions of
+                      trademark.
+                    </li>
+                    <li>
+                      Procedure: Submit Form TM-26 to the Trademark Registry
+                      with evidence.
+                    </li>
+                    <li>
+                      Who Can Submit: Any interested party affected by the
+                      trademark registration.
+                    </li>
                     <li>Authority: Trademark Registrar or IPAB.</li>
                   </ul>
 
@@ -548,8 +976,14 @@
                   </ul>
 
                   <h5>Trademark Infringement and Legal Remedies</h5>
-                  <p>Trademark infringement occurs when a mark is used without authorization, causing confusion among consumers. Legal remedies include injunctions, damages, and, in some cases, the recovery of profits. Trademark Infringement can lead to court orders to cease use and compensation for damages.</p>
-                <!-- <div class="key-principles">
+                  <p>
+                    Trademark infringement occurs when a mark is used without
+                    authorization, causing confusion among consumers. Legal
+                    remedies include injunctions, damages, and, in some cases,
+                    the recovery of profits. Trademark Infringement can lead to
+                    court orders to cease use and compensation for damages.
+                  </p>
+                  <!-- <div class="key-principles">
                   <div class="principle">
                     <span class="number">01</span>
                     <h4>Physical Properties</h4>
@@ -566,234 +1000,691 @@
                     <p>Animation informs and reinforces user actions</p>
                   </div>
                 </div> -->
-              </div>
+                </div>
 
-              <div class="content-section" id="material-design" data-aos="fade-up">
-                <h2>Trademark Objection in India</h2>
-                <p>A trademark objection in India arises when the trademark examiner or a third person raises concerns regarding the registrability of a trademark application filed under the Trade Marks Act, 1999. Such objections are typically stated in the examination report and may be based on absolute or relative grounds.</p>
-                <p>Objections are commonly raised when the proposed trademark:</p>
-                <ul>
-                  <li>Is identical or deceptively similar to an existing trademark or earlier trade mark, risking consumer confusion</li>
-                  <li>Lacks a distinctive character or is descriptive in nature</li>
-                  <li>Contains obscene matter, fraudulent implications, or international non-proprietary names (INNs)</li>
-                  <li>Misleads or deceptively implies association with a respective trademark holder, government body, or well-known mark, such as the World Health Organization</li>
-                </ul>
-                <p>The trademark applicant must file a trademark objection reply within 30 days of receiving the examination report. A well-drafted response, addressing the objection cited and providing evidence of bonafide and established practices, is crucial to avoid rejection or abandonment.</p>
-                <p>Objections may also be filed by existing trademark owners via a trademark opposition process after the mark is published in the Trademark Journal. Understanding the objections procedure and seeking expert guidance helps in crafting an appropriate response and ensures the successful trademark registration process. An effective reply not only reduces consumer confusion but also strengthens the trademark protection offered under the Indian trademark system.</p>
-
-                <h2>What is a Trademark Objection?</h2>
-                <p>Trademark objection is when the status of a trademark application shows as ‘Objected’ on the portal. ’ It means the Trademark Registrar has examined the application and raised certain concerns or objections under Section 9 (absolute grounds) or Section 11 (relative grounds) of the Trade Marks Act, 1999.</p>
-                <p>This status signifies that the mark has not been accepted at this stage and awaits a formal response from the applicant. To proceed with the registration process, the applicant must submit a detailed reply to the examination report, clarifying and defending the uniqueness and validity of the trademark.</p>
-                <p>It does not mean the application is rejected, but rather that the Registrar has identified one or more reasons, such as similarity with existing marks, lack of distinctiveness, or incorrect classification that need to be addressed by the applicant. The applicant must respond to the objection within the prescribed time, typically 30 days, by filing a written reply with supporting arguments and evidence to defend the application.</p>
-
-                <h2>Grounds for Trademark Objection</h2>
-                <p>Trademark objections in India arise when the Registrar identifies issues during the examination of a trademark application that may hinder its registration. These objections are primarily based on the absolute and relative grounds for refusal outlined in the Trade Marks Act, 1999. Understanding the specific grounds under Sections 9 and 11, as well as other common reasons, is essential for effectively responding to an objection notice.</p>
-
-                <h5>Objections Under Section 9</h5>
-                <p>Section 9 of the Trade Marks Act, 1999 deals with absolute grounds for refusal. Objections under this section are raised:</p>
-
-                <ul>
-                  <li>When a trademark lacks distinctiveness or is descriptive, generic, deceptive, or contrary to public morality. For instance, a mark that directly describes the quality, nature, or value of the goods/services, such as “Sweet” for candies, may be objected to under this section</li>
-                  <li>•	The Registrar may also object to marks that are misleading about the nature or quality of the product, or those that could hurt religious sentiments or promote obscenity.</li>
-                </ul>
-
-                <h5>Objections Under Section 11</h5>
-                <p>Section 11 covers relative grounds for refusal and focuses on the likelihood of confusion or deception due to the similarity of the proposed trademark with an existing registered mark.</p>
-
-                <ul>
-                  <li>If a trademark is identical or deceptively similar to an earlier registered trademark or has the potential to confuse consumers regarding the source of goods or services, the Registrar may raise an objection.</li>
-                  <li>This is to prevent duplication and protect the rights of existing trademark owners.</li>
-                </ul>
-
-                <h5>Reasons for Trademark Objection</h5>
-                <p>Apart from statutory grounds under Sections 9 and 11, trademark objections can also arise from procedural errors or incomplete information. Common reasons include:</p>
-
-                <ul>
-                  <li>Incorrect classification of goods/services</li>
-                  <li>Non-submission of required documents or fees</li>
-                  <li>Use of prohibited or restricted terms (e.g., national symbols or words like 'State' or 'President')</li>
-                  <li>A trademark resembling a well-known mark or containing misleading geographical indications</li>
-                </ul>
-
-                <h2>How to Respond to a Trademark Objection</h2>
-                <p>Responding to a trademark objection is a critical part of the registration process and must be handled with precision and within the stipulated timeframe. A well-drafted reply, backed by relevant legal arguments and evidence, can help overcome the objection and move the application forward. Below is a step-by-step guide on how to effectively respond to a trademark objection.</p>
-
-                <h5 class="fw-bold">Step 1: Read the Examination Report Carefully</h5>
-                <p>The first step is to thoroughly read the examination report issued by the Trademark Registrar. This report outlines the specific reasons for the objection, citing relevant sections of the Trade Marks Act, 1999. Understanding the exact nature and basis of the objection is essential for crafting a strong response.</p>
-                <h5 class="fw-bold">Step 2: Identify the Grounds of Objection</h5>
-                <p>Determine whether the objection falls under Section 9 (absolute grounds), Section 11 (relative grounds), or procedural issues. This classification helps in framing the right legal strategy and preparing a targeted response that directly addresses the Registrar’s concerns.</p>
-                <h5 class="fw-bold">Step 3: Gather Supporting Documents</h5>
-                <p>Collect relevant documents to support your case. These may include proof of prior usage of the trademark, invoices, promotional materials, website screenshots, media coverage, and any other evidence that demonstrates the distinctiveness or uniqueness of your mark.</p>
-                <h5 class="fw-bold">Step 4: Draft the Objection Reply</h5>
-                <p>Prepare a detailed reply to the examination report, addressing each objection raised. The reply should include legal reasoning, references to case law if necessary, and explanations supported by the documents gathered. The goal is to convince the Registrar that the trademark is eligible for registration.</p>
-                <h5 class="fw-bold">Step 5: File the Reply Online</h5>
-                <p>Submit the reply to the trademark objection through the official website of the Intellectual Property India (https://ipindia.gov.in) within 30 days from the date of receipt of the examination report. Ensure that the reply is filed under the correct application number and that an acknowledgement is generated.</p>
-                <h5 class="fw-bold">Step 6: Trademark Hearing</h5>
-                <p>If the Registrar is not satisfied with the written reply, a show-cause hearing may be scheduled. During the Trademark hearing., the applicant or their legal representative can present oral arguments and additional evidence to defend the trademark. It’s important to attend the hearing and be well-prepared.</p>
-                <h5 class="fw-bold">Step 7: Post-Hearing Outcome</h5>
-                <p>After the hearing, the Registrar may either accept the application for publication in the Trademark Journal or issue a refusal order. If accepted, the trademark proceeds toward registration unless opposed by a third party. If refused, the applicant has the option to file an appeal before the Intellectual Property Appellate Board or High Court, depending on the case.
-                  Trademark objections can stall brand growth, but responding shouldn’t be complex. “LEX CLAWS” offers a one-stop solution that helps businesses respond to trademark objections quickly and accurately.
+                <div
+                  class="content-section"
+                  id="objection"
+                  data-aos="fade-up"
+                >
+                  <h2>Trademark Objection in India</h2>
+                  <p>
+                    A trademark objection in India arises when the trademark
+                    examiner or a third person raises concerns regarding the
+                    registrability of a trademark application filed under the
+                    Trade Marks Act, 1999. Such objections are typically stated
+                    in the examination report and may be based on absolute or
+                    relative grounds.
+                  </p>
+                  <p>
+                    Objections are commonly raised when the proposed trademark:
+                  </p>
+                  <ul>
+                    <li>
+                      Is identical or deceptively similar to an existing
+                      trademark or earlier trade mark, risking consumer
+                      confusion
+                    </li>
+                    <li>
+                      Lacks a distinctive character or is descriptive in nature
+                    </li>
+                    <li>
+                      Contains obscene matter, fraudulent implications, or
+                      international non-proprietary names (INNs)
+                    </li>
+                    <li>
+                      Misleads or deceptively implies association with a
+                      respective trademark holder, government body, or
+                      well-known mark, such as the World Health Organization
+                    </li>
+                  </ul>
+                  <p>
+                    The trademark applicant must file a trademark objection
+                    reply within 30 days of receiving the examination report. A
+                    well-drafted response, addressing the objection cited and
+                    providing evidence of bonafide and established practices, is
+                    crucial to avoid rejection or abandonment.
+                  </p>
+                  <p>
+                    Objections may also be filed by existing trademark owners
+                    via a trademark opposition process after the mark is
+                    published in the Trademark Journal. Understanding the
+                    objections procedure and seeking expert guidance helps in
+                    crafting an appropriate response and ensures the successful
+                    trademark registration process. An effective reply not only
+                    reduces consumer confusion but also strengthens the
+                    trademark protection offered under the Indian trademark
+                    system.
                   </p>
 
+                  <h2>What is a Trademark Objection?</h2>
+                  <p>
+                    Trademark objection is when the status of a trademark
+                    application shows as ‘Objected’ on the portal. ’ It means
+                    the Trademark Registrar has examined the application and
+                    raised certain concerns or objections under Section 9
+                    (absolute grounds) or Section 11 (relative grounds) of the
+                    Trade Marks Act, 1999.
+                  </p>
+                  <p>
+                    This status signifies that the mark has not been accepted at
+                    this stage and awaits a formal response from the applicant.
+                    To proceed with the registration process, the applicant must
+                    submit a detailed reply to the examination report,
+                    clarifying and defending the uniqueness and validity of the
+                    trademark.
+                  </p>
+                  <p>
+                    It does not mean the application is rejected, but rather
+                    that the Registrar has identified one or more reasons, such
+                    as similarity with existing marks, lack of distinctiveness,
+                    or incorrect classification that need to be addressed by the
+                    applicant. The applicant must respond to the objection
+                    within the prescribed time, typically 30 days, by filing a
+                    written reply with supporting arguments and evidence to
+                    defend the application.
+                  </p>
 
-                  <h2>Documents Required for Filing a Trademark Objection Reply</h2>
-                  <p>Filing a well-supported reply to a trademark objection is essential for moving the application forward in the registration process. Along with a detailed response, certain documents must be submitted to strengthen the case and demonstrate the legitimacy and distinctiveness of the trademark. Below are the key documents required for filing a trademark objection reply in India.                  </p>
+                  <h2>Grounds for Trademark Objection</h2>
+                  <p>
+                    Trademark objections in India arise when the Registrar
+                    identifies issues during the examination of a trademark
+                    application that may hinder its registration. These
+                    objections are primarily based on the absolute and relative
+                    grounds for refusal outlined in the Trade Marks Act, 1999.
+                    Understanding the specific grounds under Sections 9 and 11,
+                    as well as other common reasons, is essential for
+                    effectively responding to an objection notice.
+                  </p>
 
-                  <h5 class="fw-bold">Authorization - TM-48</h5>
-                  <p>Form TM-48 is a legal document that authorises a trademark attorney or agent to act on behalf of the applicant. This is mandatory when the reply is filed through a legal representative. It must be duly signed and stamped by the applicant and the authorized agent.</p>
-                  <h5 class="fw-bold">Examination Report of Trademark/Application Number</h5>
-                  <p>The examination report issued by the Trademark Registrar, along with the application number, must be referenced accurately. This report outlines the reasons for objection and forms the basis of the reply being submitted.</p>
-                  <h5 class="fw-bold">ID Proof</h5>
-                  <p>Valid identity proof of the applicant, such as PAN card, Aadhaar card, passport, or voter ID is required to establish the authenticity of the individual or entity filing the reply.</p>
-                  <h5 class="fw-bold">Address Proof</h5>
-                  <p>Proof of address of the applicant (individual or company) is also necessary. This may include utility bills, property tax receipts, lease agreements, or any official document reflecting the correct correspondence address.</p>
-                  <h5 class="fw-bold">Affidavit of Usage</h5>
-                  <p>An affidavit stating the date of first use of the trademark, if applicable, must be prepared and notarised. This affidavit should detail how long the trademark has been in use and in what capacity (e.g., goods sold, services provided).</p>
-                  <h5 class="fw-bold">Proof of Evidence of a Trademark in Commercial Use</h5>
-                  <p>Supporting documents that prove the commercial use of the trademark should be attached. These can include product labels, packaging, brochures, website screenshots, advertisements, invoices, social media presence, or any other marketing materials showing the mark in active use.</p>
-
-                  <h2>Trademark Objection Reply Fees</h2>
-                  <p>In India, there is no official government fee for filing a reply to a trademark objection. The process of replying to an objection is free of cost when done by the applicant themselves through the official portal of the Intellectual Property India (IP India).</p>
-                  <p>However, if you choose to hire a trademark attorney or legal professional to assist in drafting and filing the reply, professional service charges will apply. These fees generally depend on the complexity of the objection, the experience of the service provider, and the amount of documentation required.</p>
-
-                  <h5>Typical Fee Range for Professional Services:</h5>
-                  <p>The trademark objection response price starts from ₹2999 + GST *. The price varies as per the complexity and nature of the process and is subject to change. Get in touch with our IP lawyers to get a clear outline of the prices involved.</p>
-
-                  <h2>What Happens if You Don’t Respond to a Trademark Objection?</h2>
-                  <p>If you fail to respond to a trademark objection within the stipulated time frame typically 30 days from the date of issuance of the examination report your application is liable to be abandoned by the Trademark Registry. This means your trademark will not proceed to registration, and you will lose the priority and rights associated with your application.</p>
-                  <p>Not responding can result in the following consequences:</p>
+                  <h5>Objections Under Section 9</h5>
+                  <p>
+                    Section 9 of the Trade Marks Act, 1999 deals with absolute
+                    grounds for refusal. Objections under this section are
+                    raised:
+                  </p>
 
                   <ul>
-                    <li>Application Status Changed to “Abandoned”: The trademark will no longer be considered for registration, and the status will be updated accordingly on the official trademark portal.</li>
-                    <li>Loss of Brand Protection: You won’t have exclusive legal rights to the brand name or logo you applied for, leaving it open for others to register.</li>
-                    <li>Re-filing Required: You may need to file a fresh application, which means incurring additional time and cost, and losing the original filing date (which could impact priority in case of conflicts).</li>
-                    <li>Reputational Impact: If your trademark was already in use and associated with your business, rejection due to non-response could lead to confusion and weaken your brand identity.</li>
+                    <li>
+                      When a trademark lacks distinctiveness or is descriptive,
+                      generic, deceptive, or contrary to public morality. For
+                      instance, a mark that directly describes the quality,
+                      nature, or value of the goods/services, such as “Sweet”
+                      for candies, may be objected to under this section
+                    </li>
+                    <li>
+                      • The Registrar may also object to marks that are
+                      misleading about the nature or quality of the product, or
+                      those that could hurt religious sentiments or promote
+                      obscenity.
+                    </li>
                   </ul>
 
-                  <h2>Differences Between Trademark Objection and Trademark Opposition</h2>
-                  <p>Understanding the distinction between a trademark objection and a trademark opposition is important as both are crucial stages in the trademark registration process but differ in timing, parties involved, and purpose.</p>
+                  <h5>Objections Under Section 11</h5>
+                  <p>
+                    Section 11 covers relative grounds for refusal and focuses
+                    on the likelihood of confusion or deception due to the
+                    similarity of the proposed trademark with an existing
+                    registered mark.
+                  </p>
 
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Aspect</th>
-                        <th>Trademark Objection</th>
-                        <th>Trademark Opposition</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Who Raises It</td>
-                        <td>The Trademark Registrar (examining authority).</td>
-                        <td>Any third party or competitor who believes the mark conflicts with their rights.</td>
-                      </tr>
-                      <tr>
-                        <td>Purpose</td>
-                        <td>To raise issues about the registrability of the trademark based on legal grounds (absolute or relative).</td>
-                        <td>To challenge the proposed registration based on similarity, prior rights, or other valid reasons.</td>
-                      </tr>
-                      <tr>
-                        <td>Grounds for Raising</td>
-                        <td>Grounds under Sections 9 and 11 of the Trade Marks Act, such as lack of distinctiveness, similarity to existing marks, or descriptive nature.</td>
-                        <td>Similar grounds as objection, but initiated by a third party within 4 months of publication.</td>
-                      </tr>
-                      <tr>
-                        <td>Process</td>
-                        <td>Applicant replies to the objection by submitting a legal response and evidence to the Registrar.</td>
-                        <td>The opponent files a formal notice of opposition; then both parties present arguments before the Registrar.</td>
-                      </tr>
-                      <tr>
-                        <td>Outcome</td>
-                        <td>The registrar decides whether to accept or refuse the trademark application based on the reply.</td>
-                        <td>The registrar decides whether to register or refuse the trademark after hearing both parties.</td>
-                      </tr>
-                      <tr>
-                        <td>Timeframe</td>
-                        <td>Usually within 30 days of receiving the examination report.</td>
-                        <td>The opposition period is 4 months from the date of advertisement in the Journal.</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <ul>
+                    <li>
+                      If a trademark is identical or deceptively similar to an
+                      earlier registered trademark or has the potential to
+                      confuse consumers regarding the source of goods or
+                      services, the Registrar may raise an objection.
+                    </li>
+                    <li>
+                      This is to prevent duplication and protect the rights of
+                      existing trademark owners.
+                    </li>
+                  </ul>
 
-                  <h2>Trademark Objection Hearing Process</h2>
-                  <p>When a trademark application faces an objection by the Registrar and the written reply submitted by the applicant does not satisfy the Registrar’s concerns, a hearing is scheduled to allow the applicant to present their case in person or through a legal representative. The hearing process is a crucial opportunity to clarify doubts, provide additional arguments, and increase the chances of your trademark’s acceptance.</p>
+                  <h5>Reasons for Trademark Objection</h5>
+                  <p>
+                    Apart from statutory grounds under Sections 9 and 11,
+                    trademark objections can also arise from procedural errors
+                    or incomplete information. Common reasons include:
+                  </p>
+
+                  <ul>
+                    <li>Incorrect classification of goods/services</li>
+                    <li>Non-submission of required documents or fees</li>
+                    <li>
+                      Use of prohibited or restricted terms (e.g., national
+                      symbols or words like 'State' or 'President')
+                    </li>
+                    <li>
+                      A trademark resembling a well-known mark or containing
+                      misleading geographical indications
+                    </li>
+                  </ul>
+
+                  <h2>How to Respond to a Trademark Objection</h2>
+                  <p>
+                    Responding to a trademark objection is a critical part of
+                    the registration process and must be handled with precision
+                    and within the stipulated timeframe. A well-drafted reply,
+                    backed by relevant legal arguments and evidence, can help
+                    overcome the objection and move the application forward.
+                    Below is a step-by-step guide on how to effectively respond
+                    to a trademark objection.
+                  </p>
+
+                  <h5 class="fw-bold">
+                    Step 1: Read the Examination Report Carefully
+                  </h5>
+                  <p>
+                    The first step is to thoroughly read the examination report
+                    issued by the Trademark Registrar. This report outlines the
+                    specific reasons for the objection, citing relevant sections
+                    of the Trade Marks Act, 1999. Understanding the exact nature
+                    and basis of the objection is essential for crafting a
+                    strong response.
+                  </p>
+                  <h5 class="fw-bold">
+                    Step 2: Identify the Grounds of Objection
+                  </h5>
+                  <p>
+                    Determine whether the objection falls under Section 9
+                    (absolute grounds), Section 11 (relative grounds), or
+                    procedural issues. This classification helps in framing the
+                    right legal strategy and preparing a targeted response that
+                    directly addresses the Registrar’s concerns.
+                  </p>
+                  <h5 class="fw-bold">Step 3: Gather Supporting Documents</h5>
+                  <p>
+                    Collect relevant documents to support your case. These may
+                    include proof of prior usage of the trademark, invoices,
+                    promotional materials, website screenshots, media coverage,
+                    and any other evidence that demonstrates the distinctiveness
+                    or uniqueness of your mark.
+                  </p>
+                  <h5 class="fw-bold">Step 4: Draft the Objection Reply</h5>
+                  <p>
+                    Prepare a detailed reply to the examination report,
+                    addressing each objection raised. The reply should include
+                    legal reasoning, references to case law if necessary, and
+                    explanations supported by the documents gathered. The goal
+                    is to convince the Registrar that the trademark is eligible
+                    for registration.
+                  </p>
+                  <h5 class="fw-bold">Step 5: File the Reply Online</h5>
+                  <p>
+                    Submit the reply to the trademark objection through the
+                    official website of the Intellectual Property India
+                    (https://ipindia.gov.in) within 30 days from the date of
+                    receipt of the examination report. Ensure that the reply is
+                    filed under the correct application number and that an
+                    acknowledgement is generated.
+                  </p>
+                  <h5 class="fw-bold">Step 6: Trademark Hearing</h5>
+                  <p>
+                    If the Registrar is not satisfied with the written reply, a
+                    show-cause hearing may be scheduled. During the Trademark
+                    hearing., the applicant or their legal representative can
+                    present oral arguments and additional evidence to defend the
+                    trademark. It’s important to attend the hearing and be
+                    well-prepared.
+                  </p>
+                  <h5 class="fw-bold">Step 7: Post-Hearing Outcome</h5>
+                  <p>
+                    After the hearing, the Registrar may either accept the
+                    application for publication in the Trademark Journal or
+                    issue a refusal order. If accepted, the trademark proceeds
+                    toward registration unless opposed by a third party. If
+                    refused, the applicant has the option to file an appeal
+                    before the Intellectual Property Appellate Board or High
+                    Court, depending on the case. Trademark objections can stall
+                    brand growth, but responding shouldn’t be complex. “LEX
+                    CLAWS” offers a one-stop solution that helps businesses
+                    respond to trademark objections quickly and accurately.
+                  </p>
+
+                  <h2>
+                    Documents Required for Filing a Trademark Objection Reply
+                  </h2>
+                  <p>
+                    Filing a well-supported reply to a trademark objection is
+                    essential for moving the application forward in the
+                    registration process. Along with a detailed response,
+                    certain documents must be submitted to strengthen the case
+                    and demonstrate the legitimacy and distinctiveness of the
+                    trademark. Below are the key documents required for filing a
+                    trademark objection reply in India.
+                  </p>
+
+                  <h5 class="fw-bold">Authorization - TM-48</h5>
+                  <p>
+                    Form TM-48 is a legal document that authorises a trademark
+                    attorney or agent to act on behalf of the applicant. This is
+                    mandatory when the reply is filed through a legal
+                    representative. It must be duly signed and stamped by the
+                    applicant and the authorized agent.
+                  </p>
+                  <h5 class="fw-bold">
+                    Examination Report of Trademark/Application Number
+                  </h5>
+                  <p>
+                    The examination report issued by the Trademark Registrar,
+                    along with the application number, must be referenced
+                    accurately. This report outlines the reasons for objection
+                    and forms the basis of the reply being submitted.
+                  </p>
+                  <h5 class="fw-bold">ID Proof</h5>
+                  <p>
+                    Valid identity proof of the applicant, such as PAN card,
+                    Aadhaar card, passport, or voter ID is required to establish
+                    the authenticity of the individual or entity filing the
+                    reply.
+                  </p>
+                  <h5 class="fw-bold">Address Proof</h5>
+                  <p>
+                    Proof of address of the applicant (individual or company) is
+                    also necessary. This may include utility bills, property tax
+                    receipts, lease agreements, or any official document
+                    reflecting the correct correspondence address.
+                  </p>
+                  <h5 class="fw-bold">Affidavit of Usage</h5>
+                  <p>
+                    An affidavit stating the date of first use of the trademark,
+                    if applicable, must be prepared and notarised. This
+                    affidavit should detail how long the trademark has been in
+                    use and in what capacity (e.g., goods sold, services
+                    provided).
+                  </p>
+                  <h5 class="fw-bold">
+                    Proof of Evidence of a Trademark in Commercial Use
+                  </h5>
+                  <p>
+                    Supporting documents that prove the commercial use of the
+                    trademark should be attached. These can include product
+                    labels, packaging, brochures, website screenshots,
+                    advertisements, invoices, social media presence, or any
+                    other marketing materials showing the mark in active use.
+                  </p>
+
+                  <h2>Trademark Objection Reply Fees</h2>
+                  <p>
+                    In India, there is no official government fee for filing a
+                    reply to a trademark objection. The process of replying to
+                    an objection is free of cost when done by the applicant
+                    themselves through the official portal of the Intellectual
+                    Property India (IP India).
+                  </p>
+                  <p>
+                    However, if you choose to hire a trademark attorney or legal
+                    professional to assist in drafting and filing the reply,
+                    professional service charges will apply. These fees
+                    generally depend on the complexity of the objection, the
+                    experience of the service provider, and the amount of
+                    documentation required.
+                  </p>
+
+                  <h5>Typical Fee Range for Professional Services:</h5>
+                  <p>
+                    The trademark objection response price starts from ₹2999 +
+                    GST *. The price varies as per the complexity and nature of
+                    the process and is subject to change. Get in touch with our
+                    IP lawyers to get a clear outline of the prices involved.
+                  </p>
+
+                  <h2>
+                    What Happens if You Don’t Respond to a Trademark Objection?
+                  </h2>
+                  <p>
+                    If you fail to respond to a trademark objection within the
+                    stipulated time frame typically 30 days from the date of
+                    issuance of the examination report your application is
+                    liable to be abandoned by the Trademark Registry. This means
+                    your trademark will not proceed to registration, and you
+                    will lose the priority and rights associated with your
+                    application.
+                  </p>
+                  <p>
+                    Not responding can result in the following consequences:
+                  </p>
+
+                  <ul>
+                    <li>
+                      Application Status Changed to “Abandoned”: The trademark
+                      will no longer be considered for registration, and the
+                      status will be updated accordingly on the official
+                      trademark portal.
+                    </li>
+                    <li>
+                      Loss of Brand Protection: You won’t have exclusive legal
+                      rights to the brand name or logo you applied for, leaving
+                      it open for others to register.
+                    </li>
+                    <li>
+                      Re-filing Required: You may need to file a fresh
+                      application, which means incurring additional time and
+                      cost, and losing the original filing date (which could
+                      impact priority in case of conflicts).
+                    </li>
+                    <li>
+                      Reputational Impact: If your trademark was already in use
+                      and associated with your business, rejection due to
+                      non-response could lead to confusion and weaken your brand
+                      identity.
+                    </li>
+                  </ul>
+
+                  <h2>
+                    Differences Between Trademark Objection and Trademark
+                    Opposition
+                  </h2>
+                  <p>
+                    Understanding the distinction between a trademark objection
+                    and a trademark opposition is important as both are crucial
+                    stages in the trademark registration process but differ in
+                    timing, parties involved, and purpose.
+                  </p>
+
+                  <div class="table-responsive">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Aspect</th>
+                          <th>Trademark Objection</th>
+                          <th>Trademark Opposition</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Who Raises It</td>
+                          <td>The Trademark Registrar (examining authority).</td>
+                          <td>
+                            Any third party or competitor who believes the mark
+                            conflicts with their rights.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Purpose</td>
+                          <td>
+                            To raise issues about the registrability of the
+                            trademark based on legal grounds (absolute or
+                            relative).
+                          </td>
+                          <td>
+                            To challenge the proposed registration based on
+                            similarity, prior rights, or other valid reasons.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Grounds for Raising</td>
+                          <td>
+                            Grounds under Sections 9 and 11 of the Trade Marks
+                            Act, such as lack of distinctiveness, similarity to
+                            existing marks, or descriptive nature.
+                          </td>
+                          <td>
+                            Similar grounds as objection, but initiated by a third
+                            party within 4 months of publication.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Process</td>
+                          <td>
+                            Applicant replies to the objection by submitting a
+                            legal response and evidence to the Registrar.
+                          </td>
+                          <td>
+                            The opponent files a formal notice of opposition; then
+                            both parties present arguments before the Registrar.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Outcome</td>
+                          <td>
+                            The registrar decides whether to accept or refuse the
+                            trademark application based on the reply.
+                          </td>
+                          <td>
+                            The registrar decides whether to register or refuse
+                            the trademark after hearing both parties.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Timeframe</td>
+                          <td>
+                            Usually within 30 days of receiving the examination
+                            report.
+                          </td>
+                          <td>
+                            The opposition period is 4 months from the date of
+                            advertisement in the Journal.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <h2 id="hearing">Trademark Objection Hearing Process</h2>
+                  <p>
+                    When a trademark application faces an objection by the
+                    Registrar and the written reply submitted by the applicant
+                    does not satisfy the Registrar’s concerns, a hearing is
+                    scheduled to allow the applicant to present their case in
+                    person or through a legal representative. The hearing
+                    process is a crucial opportunity to clarify doubts, provide
+                    additional arguments, and increase the chances of your
+                    trademark’s acceptance.
+                  </p>
                   <h5>Steps in the Trademark Objection Hearing Process</h5>
 
                   <h6 class="fw-bold">1. Notice of Hearing:</h6>
-                  <p>The Trademark Office issues a notice informing the applicant about the date, time, and venue of the hearing. This notice is generally sent after the applicant files the reply to the examination report.</p>
+                  <p>
+                    The Trademark Office issues a notice informing the applicant
+                    about the date, time, and venue of the hearing. This notice
+                    is generally sent after the applicant files the reply to the
+                    examination report.
+                  </p>
                   <h6 class="fw-bold">2. Preparation for Hearing:</h6>
-                  <p>The applicant or their authorised agent should prepare by reviewing the objection grounds, organising supporting evidence, and planning legal arguments to address the Registrar’s concerns effectively.</p>
+                  <p>
+                    The applicant or their authorised agent should prepare by
+                    reviewing the objection grounds, organising supporting
+                    evidence, and planning legal arguments to address the
+                    Registrar’s concerns effectively.
+                  </p>
                   <h6 class="fw-bold">3. Attendance at Hearing:</h6>
-                  <p>The applicant or their trademark attorney must appear before the Registrar on the scheduled date. The hearing is usually conducted in person or through video conferencing depending on the office and circumstances.</p>
+                  <p>
+                    The applicant or their trademark attorney must appear before
+                    the Registrar on the scheduled date. The hearing is usually
+                    conducted in person or through video conferencing depending
+                    on the office and circumstances.
+                  </p>
                   <h6 class="fw-bold">4. Presentation of Arguments:</h6>
-                  <p>During the hearing, the applicant or their representative presents oral arguments supporting the trademark’s eligibility for registration. They may explain the distinctiveness of the mark, counter objections, and highlight evidence of use.</p>
+                  <p>
+                    During the hearing, the applicant or their representative
+                    presents oral arguments supporting the trademark’s
+                    eligibility for registration. They may explain the
+                    distinctiveness of the mark, counter objections, and
+                    highlight evidence of use.
+                  </p>
                   <h6 class="fw-bold">5. Clarifications and Questions:</h6>
-                  <p>The Registrar may ask questions or seek clarifications regarding the trademark, its usage, or legal points raised in the reply. Clear and concise answers are important to convince the Registrar.</p>
+                  <p>
+                    The Registrar may ask questions or seek clarifications
+                    regarding the trademark, its usage, or legal points raised
+                    in the reply. Clear and concise answers are important to
+                    convince the Registrar.
+                  </p>
                   <h6 class="fw-bold">6. Hearing Conclusion:</h6>
-                  <p>After considering the oral and written submissions, the Registrar either:
-                	Accepts the application, allowing it to proceed to publication in the Trademark Journal, or maintains the objection and issues a final refusal order.
-                    </p>
+                  <p>
+                    After considering the oral and written submissions, the
+                    Registrar either: Accepts the application, allowing it to
+                    proceed to publication in the Trademark Journal, or
+                    maintains the objection and issues a final refusal order.
+                  </p>
                   <h6 class="fw-bold">7. Post-Hearing Actions</h6>
-                  <p>If accepted, the trademark moves closer to registration unless opposed by third parties. If refused, the applicant can file an appeal with the Intellectual Property Appellate Board or relevant High Court within the prescribed time.</p>
+                  <p>
+                    If accepted, the trademark moves closer to registration
+                    unless opposed by third parties. If refused, the applicant
+                    can file an appeal with the Intellectual Property Appellate
+                    Board or relevant High Court within the prescribed time.
+                  </p>
 
-                  <h2>Why Choose “LEX CLAWS” for Trademark Objection?</h2>
-                    <p>Handled trademark objection with expert support. We offer the fastest turnaround time in India, with guaranteed document drafting by experienced senior IP lawyers in under 24 hours (T&C apply). Our legal team thoroughly examines the objection, prepares a strong and compliant reply, and ensures the documents are uploaded within 2 working days. With “LEX CLAWS”, you get speed, legal accuracy, and complete support in safeguarding your trademark. Choose “LEX CLAWS” to respond to objections with confidence and clarity.</p>
+                  <h2 id="why">Why Choose “LEX CLAWS” for Trademark Objection?</h2>
+                  <p>
+                    Handled trademark objection with expert support. We offer
+                    the fastest turnaround time in India, with guaranteed
+                    document drafting by experienced senior IP lawyers in under
+                    24 hours (T&C apply). Our legal team thoroughly examines the
+                    objection, prepares a strong and compliant reply, and
+                    ensures the documents are uploaded within 2 working days.
+                    With “LEX CLAWS”, you get speed, legal accuracy, and
+                    complete support in safeguarding your trademark. Choose “LEX
+                    CLAWS” to respond to objections with confidence and clarity.
+                  </p>
 
+                  <h2>Why Choose “LEX CLAWS” for Trademark Registration?</h2>
+                  <p>
+                    Registering your trademark is crucial because it helps
+                    protect your brand’s identity, builds customer trust, and
+                    ensures your business stands out in a crowded market.
+                    Whether you need Brand Registration in India, Brand Name
+                    Registration, Online Trademark Registration, or want to
+                    register a trademark, securing legal protection is essential
+                    for your business.
+                  </p>
 
-                    <h2>Why Choose “LEX CLAWS” for Trademark Registration?</h2>
-                    <p>Registering your trademark is crucial because it helps protect your brand’s identity, builds customer trust, and ensures your business stands out in a crowded market. Whether you need Brand Registration in India, Brand Name Registration, Online Trademark Registration, or want to register a trademark, securing legal protection is essential for your business.</p>
-
-                    <h4>Our Trademark Services:</h4>
-                    <ul>
-                      <li>Expertise in Trademark Law: Our legal team specializes in trademark law, ensuring your registered trademark application is accurate, compliant, and efficiently processed</li>
-                      <li>Thorough Trademark Search: We perform comprehensive online trademark registration searches to confirm the uniqueness of your brand name registration, minimizing potential conflicts and boosting your chances of approval</li>
-                      <li>Simplified Application Process: Our platform streamlines the trademark registration process, including logo trademark registration, brand name registration, and register trademark filing. You submit your details easily, and our experts manage the paperwork on your behalf.</li>
-                      <li>Support Through Every Step: From filing the initial application to handling objections or oppositions, we provide continuous support to guide you through the entire Brand Registration in India process</li>
-                      <li>Timely Renewal Reminders: Online trademark registration lasts for 10 years. We ensure you never miss a renewal date by sending timely reminders to protect your registered trademark.</li>
-                      <li>Trademark Assignment Assistance: Our experts handle the entire trademark assignment process. From drafting the assignment deed to filing with the Trademark Registry, we ensure your ownership transfer is legally compliant and smoothly executed.</li>
-                      <li>Trademark Objection Resolution: If the trademark office objects to your application for a trademark, we help you resolve the grounds of the trademark objection. Our experts in law will guide you on how to prepare a comprehensive counter-statement and assist you on how to settle the matter with the right legal arguments and evidence.</li>
-                      <li>Trademark Hearing Representation: If the objection proceeds to a trademark hearing, our professional team will advocate with the Trademark Registrar on your behalf. We will prepare you for the hearing by collecting necessary evidence, documenting your case, and presenting it to you, guaranteeing a high probability of success in registering your trademark.</li>
-                    </ul>
+                  <h4>Our Trademark Services:</h4>
+                  <ul>
+                    <li>
+                      Expertise in Trademark Law: Our legal team specializes in
+                      trademark law, ensuring your registered trademark
+                      application is accurate, compliant, and efficiently
+                      processed
+                    </li>
+                    <li>
+                      Thorough Trademark Search: We perform comprehensive online
+                      trademark registration searches to confirm the uniqueness
+                      of your brand name registration, minimizing potential
+                      conflicts and boosting your chances of approval
+                    </li>
+                    <li>
+                      Simplified Application Process: Our platform streamlines
+                      the trademark registration process, including logo
+                      trademark registration, brand name registration, and
+                      register trademark filing. You submit your details easily,
+                      and our experts manage the paperwork on your behalf.
+                    </li>
+                    <li>
+                      Support Through Every Step: From filing the initial
+                      application to handling objections or oppositions, we
+                      provide continuous support to guide you through the entire
+                      Brand Registration in India process
+                    </li>
+                    <li>
+                      Timely Renewal Reminders: Online trademark registration
+                      lasts for 10 years. We ensure you never miss a renewal
+                      date by sending timely reminders to protect your
+                      registered trademark.
+                    </li>
+                    <li>
+                      Trademark Assignment Assistance: Our experts handle the
+                      entire trademark assignment process. From drafting the
+                      assignment deed to filing with the Trademark Registry, we
+                      ensure your ownership transfer is legally compliant and
+                      smoothly executed.
+                    </li>
+                    <li>
+                      Trademark Objection Resolution: If the trademark office
+                      objects to your application for a trademark, we help you
+                      resolve the grounds of the trademark objection. Our
+                      experts in law will guide you on how to prepare a
+                      comprehensive counter-statement and assist you on how to
+                      settle the matter with the right legal arguments and
+                      evidence.
+                    </li>
+                    <li>
+                      Trademark Hearing Representation: If the objection
+                      proceeds to a trademark hearing, our professional team
+                      will advocate with the Trademark Registrar on your behalf.
+                      We will prepare you for the hearing by collecting
+                      necessary evidence, documenting your case, and presenting
+                      it to you, guaranteeing a high probability of success in
+                      registering your trademark.
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <aside class="table-of-contents contact" data-aos="fade-left">
+                <div
+                  class="contact-form-container"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <h3>Enquiry Form</h3>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p> -->
 
-
-            </div>
-            <aside class="table-of-contents contact" data-aos="fade-left">
-              <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
-                <h3>Enquiry Form</h3>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing.</p> -->
-  
-                <form action="forms/contact.php" method="post" class="php-email-form">
-                  <div class="row">
-                    <div class="form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  <form
+                    action="forms/contact.php"
+                    method="post"
+                    class="php-email-form"
+                  >
+                    <div class="row">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your Name"
+                          required=""
+                        />
+                      </div>
+                      <div class="form-group mt-3">
+                        <input
+                          type="email"
+                          class="form-control"
+                          name="email"
+                          id="email"
+                          placeholder="Your Email"
+                          required=""
+                        />
+                      </div>
                     </div>
                     <div class="form-group mt-3">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="phone"
+                        id="phone"
+                        placeholder="Phone number"
+                        required=""
+                      />
                     </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone number" required="">
-                  </div>
-                  <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="3" placeholder="Message" required="" style="min-height: 100px !important;"></textarea>
-                  </div>
-  
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-  
-                  <div class="form-submit">
-                    <button type="submit">Send Message</button>
-                  </div>
-                </form>
-              </div>
-            </aside>
-          </div>
+                    <div class="form-group mt-3">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="3"
+                        placeholder="Message"
+                        required=""
+                        style="min-height: 100px !important"
+                      ></textarea>
+                    </div>
 
-          <!-- <div class="article-footer" data-aos="fade-up">
+                    <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+                    </div>
+
+                    <div class="form-submit">
+                      <button type="submit">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </aside>
+            </div>
+
+            <!-- <div class="article-footer" data-aos="fade-up">
             <div class="share-article">
               <h4>Share this article</h4>
               <div class="share-buttons">
@@ -823,146 +1714,256 @@
               </div>
             </div>
           </div> -->
+          </article>
+        </div>
+      </section>
+      <!-- /Blog Details Section -->
+    </main>
 
-        </article>
-
-      </div>
-    </section><!-- /Blog Details Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-6 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Lex Claws</span>
-          </a>
-          <div class="footer-contact ">
-            <p>Delhi, India</p>
-            <p class="mt-2"><strong>Phone:</strong> <span>+91 70656 67880</span></p>
-            <p><strong>Email:</strong> <span>contact.lexclaws@gmail.com</span></p>
-            <p><strong>Website:</strong> <span>www.lexclaws.com</span></p>
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">Lex Claws</span>
+            </a>
+            <div class="footer-contact">
+              <p>Delhi, India</p>
+              <p class="mt-2">
+                <strong>Phone:</strong> <span>+91 70656 67880</span>
+              </p>
+              <p>
+                <strong>Email:</strong> <span>contact.lexclaws@gmail.com</span>
+              </p>
+              <p><strong>Website:</strong> <span>www.lexclaws.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/lexclaws"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="https://www.facebook.com/lexclaws/"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/lexclaws/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/lexclaws-817480156/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://www.youtube.com/@lexclaws"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://www.reddit.com/user/Background-Move-5199/"
+                ><i class="bi bi-reddit"></i
+              ></a>
+              <a href="https://in.pinterest.com/lexclaws/"
+                ><i class="bi bi-pinterest"></i
+              ></a>
+            </div>
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href="https://x.com/lexclaws"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/lexclaws/"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/lexclaws/"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/lexclaws-817480156/"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.youtube.com/@lexclaws"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.reddit.com/user/Background-Move-5199/"><i class="bi bi-reddit"></i></a>
-            <a href="https://in.pinterest.com/lexclaws/"><i class="bi bi-pinterest"></i></a>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="bareacts.html">Bare Acts</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="trademark.html">Trademark</a></li>
+              <li><a href="copyright.html">Copyright </a></li>
+              <li><a href="">Patent</a></li>
+              <li><a href="">Secreterial </a></li>
+              <li><a href="">Direct Tax </a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4 class="invisible">Extra Link</h4>
+            <ul>
+              <li><a href="gst.html">Indirect Tax </a></li>
+              <li><a href="">Book Keeping</a></li>
+              <li><a href="">Registration</a></li>
+              <li><a href="">Challan</a></li>
+            </ul>
           </div>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="bareacts.html">Bare Acts</a></li>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="trademark.html">Trademark</a></li>
-            <li><a href="copyright.html">Copyright </a></li>
-            <li><a href="">Patent</a></li>
-            <li><a href="">Secreterial </a></li> 
-            <li><a href="">Direct Tax </a></li>
-          </ul>
-        </div>
-        
-        
-        
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4 class="invisible">Extra Link</h4>
-          <ul>
-            <li><a href="gst.html">Indirect Tax </a></li>
- <li><a href="">Book Keeping</a></li>
- <li><a href="">Registration</a></li>
- <li><a href="">Challan</a></li>
-          </ul>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>2022 Copyright</span> <strong class="px-1 sitename">Lex Claws</strong> <span>All Rights Reserved</span></p>
-   
-      <div class="credits">
-      
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>2022 Copyright</span>
+          <strong class="px-1 sitename">Lex Claws</strong>
+          <span>All Rights Reserved</span>
+        </p>
+
+        <div class="credits"></div>
       </div>
-    </div>
+    </footer>
+    <!-- Scroll Top -->
 
-  </footer>
-  <!-- Scroll Top -->
- 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short"></i></a>
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
+    <a
+      href="https://wa.me/917838780831?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20trademark%20service."
+      class="whatsapp-button bounce"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
+        alt="WhatsApp"
+      />
+    </a>
 
-  
-  <a href="https://wa.me/917838780831?text=Hello%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20know%20more%20about%20trademark%20service." class="whatsapp-button bounce" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
-  </a>
-  
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <script>
-  const bookmarksNavbar = document.getElementById('bookmarks-navbar');
-  const sectionIds = [
-    "introduction",
-    "skeuomorphism",
-    "flat-design",
-    "material-design",
-    "neumorphism",
-    "future"
-  ];
-  const navLinks = Array.from(bookmarksNavbar.querySelectorAll('.nav-link'));
+    <script>
+      const bookmarksNavbar = document.getElementById("bookmarks-navbar");
+      const sectionIds = [
+        "#registration",
+        "#types",
+        "#fees",
+        "#document",
+        "#benefits",
+        "#renewal",
+        "#objection",
+        "#hearing",
+        "#why",
+      ];
+      const navLinks = Array.from(
+        bookmarksNavbar.querySelectorAll(".nav-link")
+      );
+      const navbarNav = bookmarksNavbar.querySelector(".navbar-nav");
 
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 100) {
-      bookmarksNavbar.classList.add('visible');
-      bookmarksNavbar.style.display = 'block';
-    } else {
-      bookmarksNavbar.classList.remove('visible');
-      bookmarksNavbar.style.display = 'none';
-    }
+      // Enhanced scrolling functionality
+      let isScrolling = false;
+      let startX = 0;
+      let scrollLeft = 0;
 
-    // Highlight active section
-    let current = "";
-    for (const id of sectionIds) {
-      const section = document.getElementById(id);
-      if (section && window.scrollY >= section.offsetTop - 120) {
-        current = id;
-      }
-    }
-    navLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-    });
-  });
-</script>
+      // Touch events for mobile scrolling
+      navbarNav.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].pageX - navbarNav.offsetLeft;
+        scrollLeft = navbarNav.scrollLeft;
+        isScrolling = true;
+      });
 
-</body>
+      navbarNav.addEventListener('touchmove', function(e) {
+        if (!isScrolling) return;
+        e.preventDefault();
+        const x = e.touches[0].pageX - navbarNav.offsetLeft;
+        const walk = (x - startX) * 2;
+        navbarNav.scrollLeft = scrollLeft - walk;
+      });
 
+      navbarNav.addEventListener('touchend', function() {
+        isScrolling = false;
+      });
+
+      // Mouse wheel scrolling
+      navbarNav.addEventListener('wheel', function(e) {
+        e.preventDefault();
+        const scrollAmount = 100; // Adjust scroll speed
+        if (e.deltaY > 0) {
+          // Scroll right
+          navbarNav.scrollLeft += scrollAmount;
+        } else {
+          // Scroll left
+          navbarNav.scrollLeft -= scrollAmount;
+        }
+      });
+
+      // Mouse events for desktop scrolling
+      navbarNav.addEventListener('mousedown', function(e) {
+        startX = e.pageX - navbarNav.offsetLeft;
+        scrollLeft = navbarNav.scrollLeft;
+        isScrolling = true;
+        navbarNav.style.cursor = 'grabbing';
+      });
+
+      navbarNav.addEventListener('mousemove', function(e) {
+        if (!isScrolling) return;
+        e.preventDefault();
+        const x = e.pageX - navbarNav.offsetLeft;
+        const walk = (x - startX) * 2;
+        navbarNav.scrollLeft = scrollLeft - walk;
+      });
+
+      navbarNav.addEventListener('mouseup', function() {
+        isScrolling = false;
+        navbarNav.style.cursor = 'grab';
+      });
+
+      navbarNav.addEventListener('mouseleave', function() {
+        isScrolling = false;
+        navbarNav.style.cursor = 'grab';
+      });
+
+      // Smooth scroll to active section
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+          bookmarksNavbar.classList.add("visible");
+          bookmarksNavbar.style.display = "block";
+        } else {
+          bookmarksNavbar.classList.remove("visible");
+          bookmarksNavbar.style.display = "none";
+        }
+
+        // Highlight active section
+        let current = "";
+        for (const id of sectionIds) {
+          const section = document.getElementById(id);
+          if (section && window.scrollY >= section.offsetTop - 120) {
+            current = id;
+          }
+        }
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === "#" + current
+          );
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -107,56 +107,82 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bookmarksNavbarContent" aria-controls="bookmarksNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="bookmarksNavbarContent">
+    <div class="collapse navbar-collapse" id="bookmarksNavbarContent" style="overflow: auto;">
       <ul class="navbar-nav flex-row flex-nowrap gap-2 gap-lg-5 overflow-auto w-100 justify-content-lg-center">
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#introduction">Introduction</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#skeuomorphism">Skeuomorphic Era</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#flat-design">Flat Design</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#material-design">Material Design</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#neumorphism">Neumorphism</a></li>
-        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#future">Future</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#process">Process</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#documents">Documents</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#object">Objections</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold fs-6" href="#infringement">Infringement</a></li>
       </ul>
     </div>
   </div>
 </nav>
 <style>
-#bookmarks-navbar {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  transition: opacity 0.3s;
-  max-width: 100vw;
-}
-#bookmarks-navbar.visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-#bookmarks-navbar .navbar-nav {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-#bookmarks-navbar .nav-link {
-  color: #333;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  transition: background 0.2s, color 0.2s;
-  white-space: nowrap;
-}
-#bookmarks-navbar .nav-link.active,
-#bookmarks-navbar .nav-link:hover {
-  background: #007bff;
-  color: #fff;
-}
-@media (max-width: 991.98px) {
   #bookmarks-navbar {
-    top: 56px;
-    border-radius: 0 0 20px 20px;
-    padding: 6px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: opacity 0.3s;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  #bookmarks-navbar.visible {
+    opacity: 1;
+    pointer-events: auto;
   }
   #bookmarks-navbar .navbar-nav {
-    gap: 0.5rem !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #e6edf0;
+    padding: 0 10px;
+    /* cursor: grab; */
   }
-}
+  #bookmarks-navbar .navbar-nav::-webkit-scrollbar {
+    height: 6px;
+  }
+  #bookmarks-navbar .navbar-nav::-webkit-scrollbar-track {
+    background: #e6edf0;
+    border-radius: 3px;
+  }
+  #bookmarks-navbar .navbar-nav::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 3px;
+  }
+  #bookmarks-navbar .navbar-nav::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+  }
+  #bookmarks-navbar .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+  }
+  #bookmarks-navbar .nav-link.active,
+  #bookmarks-navbar .nav-link:hover {
+    background: #007bff;
+    color: #fff;
+  }
+  @media (max-width: 991.98px) {
+    #bookmarks-navbar {
+      top: 56px;
+      border-radius: 0 0 20px 20px;
+      padding: 6px 0;
+    }
+    #bookmarks-navbar .navbar-nav {
+      gap: 0.5rem !important;
+    }
+   
+  }
+  @media only screen and (max-width: 600px) {
+    .reg{
+      width: 10px !important;
+    }
+  }
 </style>
   <main class="main ">
 
@@ -210,18 +236,12 @@
             
 
             <div class="article-content">
-              <h1>Trademark Registration in India</h1>
+              <h1>Introduction to Copyright Registration in India</h1>
               <div class="content-section" id="introduction" data-aos="fade-up">
-                <p class="lead">
-                  Trademark registration is the process of securing exclusive legal rights to your brand name, logo, or symbol. In India, trademark registration is governed under the Trade Marks Act, 1999, allowing you to defend and exclusively use your intellectual property in the marketplace.
-                </p>
-
-                <p>
-                  The trademark application process involves submitting Form TM-A to the Trademark Office and selecting the correct class for your goods or services. This ensures that your brand is appropriately protected. Upon registration, you can use the ® symbol, signifying that your trademark is legally recognized.
-                </p>
-                <p>
-                  At “LEX CLAWS”, we simplify the trademark registration process, offering expert guidance through trademark searches, addressing any oppositions, and assisting with renewals. Our experienced trademark attorneys help secure your trademark certificate and ensure your intellectual property is safeguarded, laying a solid legal foundation for your brand’s identity.
-                </p>
+                <p>Copyright Registration is an important process under copyright law that grants the copyright owner's exclusive rights over their original work, allowing them to control reproduction, distribution, public display, and adaptation. Copyright covers many types of work, including literary works, artistic works, musical works, dramatic works, computer programs, sound recordings, cinematograph films, and even computer software.</p>
+                <h2>What is Copyright?</h2>
+                <p>Copyright refers to a legal right granted over original literary, dramatic, musical, or artistic works, such as books, movies, paintings, and computer programs, as well as over sound recordings, which is a form of intellectual property law giving the creator exclusive rights to their work, including how it can be used.</p>
+                <p>It protects the expression of ideas, information, but not ideas and information themselves. For example, it does not protect facts, ideas, systems, or methods of operation, but it may protect how those things are expressed.</p>
 
                 <!-- <div class="highlight-quote">
                   <blockquote>
@@ -232,37 +252,63 @@
               </div>
 
               <div class="content-section" id="skeuomorphism" data-aos="fade-up">
-                <h2>What is a Trademark?</h2>
-                <p>
-                  A trademark is a type of intellectual property that includes a word, phrase, symbol, design, or combination of these elements, used to identify and distinguish the goods or services of one entity from others. Under the Trade Marks Act, 1999, a trademark can also encompass the shape of goods, packaging, or color combinations, provided it can be graphically represented and is capable of differentiating one product or service from another.
-                </p>
+                <h2>Importance of Copyright Registration</h2>
+                <p>Copyright registration protects the expression of ideas and information, but not the ideas and information themselves. For example, copyright doesn't protect facts, ideas, systems, or methods of operation, but it may protect how those things are expressed.</p>
+
+                <p>To initiate a Copyright Application, creators or an authorised agent must submit Form XIV along with a Statement of Particulars and, if necessary, a Power of Attorney. Additional requirements, such as the nationality of the applicant and copies of the work (including source code for software), are essential for establishing ownership. Once the requisite fee is paid, the application enters the Copyright Registration Process.</p>
+                <p>Whether the work is a published work or an unpublished work, registration provides significant legal protection and establishes a public record of ownership. In the event of copyright infringement, a registered copyright serves as prima facie evidence in a court of law, simplifying the enforcement of intellectual property rights. A Copyright Registration Certificate also allows copyright holders to seek statutory damages and other remedies in case of unauthorised use
+                  For creators in New Delhi and across India, the Indian Copyright Act is aligned with international standards, such as the Berne Convention, ensuring that copyright protection is recognised globally. Indian law, like the U.S. Copyright Office in the United States, upholds copyright for the lifetime of the author plus an additional 60 years. This Term of Copyright supports creators in maintaining the integrity and value of their work over time.
+                  </p>
+                  <p>Applicants can submit their Copyright Application either online via the official website for Online Copyright Registration or through traditional methods, each with a waiting period. The online portal provides a streamlined way to register creative content, while the offline route requires submitting documentation in person or by mail to the Register of Copyrights. <br> <br>
+                    Some cases may require a separate application or an objection certificate if ownership rights involve multiple parties. For commercial works such as motion pictures, Cinematography Films, and derivative works, copyright registration is invaluable for protecting the brand value and economic potential of creative assets. <br> <br>
+                    The Copyright Rules under Rule 70 outline the procedural requirements, and both published and unpublished works can benefit from this legal protection. Through registration, creators ensure their creative work remains protected, allowing them to reach a broader audience without the risk of unauthorised exploitation or entry into the public domain. “Lex Claws” simplifies the entire Copyright Registration Process by providing expert guidance and end-to-end assistance. From filing the Copyright Application on the official website to ensuring that the requisite fee and documentation—such as Form XIV, Statement of Particulars, and Power of Attorney—are in order, “Lex Claws” streamlines the journey. In case of objections raised by the Register of Copyrights, “Lex Claws” supports applicants in preparing strong responses to resolve any issues promptly, allowing the registration to proceed smoothly. <br> <br>
+                    “Lex Claws” also offers protection strategies for creators facing copyright infringement issues, helping them guide the legal avenues to assert their exclusive rights in a court of law. Whether you are dealing with unauthorized use or need assistance with statutory damages claims, “Lex Claws”’s legal team provides dedicated support to safeguard your work. With expertise in both the Indian Copyright Act and international agreements like the Berne Convention, “Lex Claws” enables creators to secure, protect, and fully monetize their creative work across a global market.
+                    
+                    </p>
 
               
               </div>
 
               <div class="content-section" id="flat-design" data-aos="fade-up">
-                <h3>Trademark Act of 1999</h3>
+                <h3>Overview of the Copyright Registration Process in India</h3>
                 <p>
-                  The Copyright Act of 1999 outlines the rules and regulations for registration, assignment, and trademark protection. The Indian Copyright Act, 1999 is administered by the Controller General of Patents, Designs, and Copyright under the Ministry of Commerce and Industry of the government of India.
-                </p>
-                <h2>Why Should You Register Trademark?</h2>
-                <p>
-                  Trademark registration in India offers legal protection, helping the owner to pursue legal action against infringement and unauthorized trademark use. According to the Trademark Act of 1999, a registered trademark is valid for 10 years from the filing date. You must renew it thereafter to ensure ongoing brand protection. Here are a few other reasons to register a trademark:
-                </p>
+                  TThe copyright registration process in India involves several steps, with the Copyright Office overseeing the formalisation of ownership for works under Indian copyright law:</p>
+                  <p>1. Application Submission: Complete Form IV and include both the Statement of Particulars and Statement of Further Particulars detailing the work.</p>
+                  <p>2. Fee Payment: Pay the required fee based on the category of work (literary, artistic, software, etc.).</p>
+                  <p>3. Issuance of Dairy Number: After submission, the application receives a Dairy Number, which serves as an official acknowledgment.</p>
+                  <p>4. Handling Objections: If any objections arise, applicants are notified and given the chance to resolve them.</p>
+                  <p>5. Certificate Issuance: Once approved, a copyright certificate is issued, officially confirming ownership and providing reproduction and adaptation rights.</p>
+                  <p>Understanding Copyright Registration</p>
+                <h2>What Works Are Eligible for Copyright?</h2>
+                <p>Understanding copyright registration forms the fundamental base for creators who want to protect their property. The original work-whether a book, artwork, music, or software-can then be legally recognised and defended against unauthorised use. Rights can be enforced in court by filing an infringement lawsuit and proving ownership through registration. <br><br>
+                  According to the Copyright Act, 1957 various types of creative works are eligible for copyright protection. These include:
+                  </p>
 
                 <div class="comparison-grid">
                   <div class="row g-4">
                     <div class="col-md-12">
                       <div class="comparison-card">
                         <ul>
-                          <li>Registering your trademark with the trademark registry establishes an official public record of your ownership through publications in the trademark journal.</li>
-                          <li>It distinguishes your brand from competitors, boosting recognition.</li>
-                          <li>As registered Copyright are associated with quality, it build customer trust.</li>
-                          <li>Increases the business value, attracting investors and partners</li>
-                          <li>Protects against counterfeiting and imitation</li>
-                          <li>Allows you to license your trademark to others</li>
-                          <li>Lets you use the ® symbol, boosting brand credibility.</li>
-                          <li>Becomes a valuable, marketable business asset.</li>
+                          <li>Dramatic Works: Includes original plays, screenplays, and scripts intended for live or recorded performances.</li>
+                          <li>Sound Recording and Reproduction: Audio recordings such as music tracks, spoken word, audiobooks, and soundtracks, including rights over the reproduction of these recordings.</li>
+                          <li>Audiovisual Works: Works that combine visual and audio elements, such as movies, television shows, animations, and video productions.</li>
+                          <li>Musical Compositions: Musical works including scores, compositions, and arrangements, regardless of whether lyrics are included.</li>
+                          <li>Pictorial, Graphic, and Sculptural Works: Creative visual works like paintings, photographs, illustrations, graphic designs, and sculptures.</li>
+                          <li>Short Phrases: Unique and creatively distinct short expressions or slogans (Note: Generally, phrases alone are not copyrightable, but some exceptions may apply for highly creative expressions).</li>
+                          <li>Novels: Long-form prose fiction, including novels and literary works with creative expression and original storytelling.</li>
+                          <li>Literary Works: Written works covering books, articles, essays, poems, manuals, and other forms of written expression.</li>
+                          <li>Artistic Works: A broad category encompassing works of visual art, such as drawings, paintings, sculptures, and illustrations.</li>
+                          <li>Musical Composition: Includes arrangements, compositions, and musical scores, specifically focusing on musical notation.</li>
+                          <li>Architectural Works: Original architectural designs, including blueprints, plans, and final built structures.</li>
+                          <li>Cinematograph Films: Motion pictures, which include movies, video content, and other moving visual media with soundtracks.</li>
+                          <li>Choreographic Works: Original dance routines or choreographed sequences, including creative expressions through movement.</li>
+                          <li>Architecture: The design, layout, and structure of buildings and physical spaces, covering both conceptual plans and completed works.</li>
+                          <li>Advertisements, Maps, and Technical Drawings: Commercially valuable creations like advertisements, detailed maps, and technical illustrations or blueprints.</li>
+                          <li>Software: Computer programs, applications, and digital code, including both compiled software and source code.</li>
+                          <li>Databases: Organised collections of information or data, where creativity is involved in selection, arrangement, or presentation.</li>
+                          <li>Ownership of Copyright: Legal rights associated with creative works, giving exclusive control over their use and distribution.</li>
+                          <li>Compilations: Collections or anthologies that show creative effort in the selection and arrangement of content, such as curated articles, poems, or musical compilations.</li>
+                          
                         </ul>
                       </div>
                     </div>
@@ -271,25 +317,21 @@
                 </div>
               </div>
               <div class="content-section" id="flat-design" data-aos="fade-up">
-                <h3>Who can apply for a Trademark Registration Online?</h3>
-                <p>
-                  The person or entity listed as the applicant in the registration form will be considered a trademark owner. The following entities can apply for trademark registration online:
-                </p>
+                <h3>Copyright Symbol</h3>
+                <p>The copyright symbol, ©, is used to indicate that a work is protected under copyright law. Here’s how it should be used and its legal implications:</p>
 
                 <div class="comparison-grid">
                   <div class="row g-4">
                     <div class="col-md-12">
                       <div class="comparison-card">
                         <ul>
-                          <li>Individuals</li>
-                          <li>Joint owners of a company</li>
-                          <li>Proprietorship firms</li>
-                          <li>Partnership firms (with a maximum of ten partners)</li>
-                          <li>Limited Liability Partnerships (LLPs)</li>
-                          <li>Indian companies</li>
-                          <li>Foreign companies</li>
-                          <li>Trusts</li>
-                          <li>Societies</li>
+                          <li>Usage of the Symbol: The symbol “©” is often used alongside the word “copyright” or the creator’s name to show ownership over the work.</li>
+                          <li>How to Use: The typical format for a copyright notice includes: <br>
+                            1. The copyright symbol “©” or the word “Copyright” <br>
+                            2. The name of the copyright owner or creator <br>
+                            3. The year of publication (which may differ from the year of creation)
+                            </li>
+                          <li>Legal Implications: Although not required in all jurisdictions, using the copyright symbol in a notice can help deter infringement and demonstrates the owner’s intention to protect their work under the Universal Copyright Convention.</li>
                         </ul>
                       </div>
                     </div>
@@ -299,74 +341,339 @@
               </div>
 
               <div class="content-section" id="material-design" data-aos="fade-up">
-                <h2>Types of Copyright in India</h2>
-                <p>
-                  Copyright are categorized into different types, each dedicated to distinguishing goods and services. Here's a breakdown of the different types of Copyright registered in India:
-                  <h5>Product Mark</h5>
-                  Identifies and distinguishes goods rather than services. This includes brand names, logos, or symbols.
-                  The best example is ‘Nestle.’
-                  
+                <h2>Why Consider Registering Your Work Under Copyright Law?</h2>
+                <p>Copyright registration offers several advantages for creators and owners by enhancing the protection and security of their creative content. Key reasons include:
                 </p>
+                  <h5>Legal Protection</h5>
+                  <p>Registration provides formal copyright protection, which strengthens the creator’s rights.</p>
 
-                <div class="key-principles">
-                  <div class="principle">
-                    <span class="number">01</span>
-                    <h4>Physical Properties</h4>
-                    <p>Surfaces and edges provide meaningful interaction cues</p>
-                  </div>
-                  <div class="principle">
-                    <span class="number">02</span>
-                    <h4>Bold Graphics</h4>
-                    <p>Deliberate color choices and intentional white space</p>
-                  </div>
-                  <div class="principle">
-                    <span class="number">03</span>
-                    <h4>Meaningful Motion</h4>
-                    <p>Animation informs and reinforces user actions</p>
-                  </div>
-                </div>
+                  <h5>Proof of Ownership</h5>
+                  <p>A registered copyright establishes legal ownership and helps protect the creator’s efforts and endeavors.</p>
+                  <h5>Motivation for Creativity</h5>
+                  <p>Knowing that copyright law safeguards their work encourages creators to produce more content.</p>
+                  <h5>Exclusive Rights</h5>
+                  <p>Copyright registration ensures that the creator maintains control over reproduction, distribution, and adaptations.</p>
+                  <h5>Security of Rights</h5>
+                  <p>Registration secures the creator's rights, offering a clear path to legal action if infringement occurs.</p>
+                                
+
               </div>
 
               <div class="content-section" id="neumorphism" data-aos="fade-up">
-                <h2>The Rise of Neumorphism</h2>
-                <p>
-                  Neumorphism represents the latest evolution in UI design, combining aspects of skeuomorphism with modern minimal aesthetics. This style creates soft, extruded surfaces that appear to emerge from the background.
-                </p>
+                <h2>Types of Copyrights in India</h2>
+                <p>The Copyright Act, 1957, outlines six types of copyrights, each protecting different forms of creative work. Section 13 of Chapter III lists the following:</p>
 
-                <div class="info-box">
-                  <div class="icon">
-                    <i class="bi bi-info-circle"></i>
-                  </div>
-                  <div class="content">
-                    <h4>Key Characteristics</h4>
-                    <p>Neumorphic design relies on subtle shadow work to create the illusion of elements either protruding from or being pressed into their background surface.</p>
-                  </div>
-                </div>
+                <ul>
+                  <li>Literary Works: Includes written works such as books, articles, and software.</li>
+                  <li>Dramatic Works: Scripts and screenplays meant for live or recorded performances.</li>
+                  <li>Musical Works: Melodic compositions, typically excluding lyrics or other sound recordings.</li>
+                  <li>Artistic Works: Encompasses drawings, sculptures, photographs, paintings, and similar visual media.</li>
+                  <li>Cinematograph Films: Complete film productions, covering both video and audio elements.</li>
+                  <li>Sound Recordings: Audio-only works, including recorded music and spoken word performances.</li>
+                </ul>
+                <p>Apart from the above mentioned types there are individual and Joint ownerships in Copyrights. Here is a table summarising the key differences between individual ownership and joint authorship in the context of copyright.</p>
               </div>
 
               <div class="content-section" id="future" data-aos="fade-up">
-                <h2>Looking to the Future</h2>
-                <p>
-                  As we look ahead, UI design continues to evolve with new technologies and user expectations. The future may bring more personalized, adaptive interfaces that respond to individual user preferences and contexts.
-                </p>
+                <h2>Legal Framework for Copyright Registration in India</h2>
+                <p>The Indian Copyright Act of 1957 and the Copyright Rules of 2013 are the legal frameworks that are used in copyright registration. These serve to protect original literary, artistic, musical, and cinematographic works as well as their copyright owners with special rights concerning their creations. Here is a detailed outline of the same:</p>
 
-                <div class="future-trends">
-                  <div class="trend">
-                    <i class="bi bi-phone"></i>
-                    <h4>Adaptive Interfaces</h4>
-                    <p>Interfaces that automatically adjust based on user behavior and preferences</p>
-                  </div>
-                  <div class="trend">
-                    <i class="bi bi-eye"></i>
-                    <h4>Immersive Experiences</h4>
-                    <p>Integration of AR and VR elements in everyday interfaces</p>
-                  </div>
-                  <div class="trend">
-                    <i class="bi bi-hand-index"></i>
-                    <h4>Gesture Controls</h4>
-                    <p>Advanced motion and gesture-based interactions</p>
-                  </div>
-                </div>
+                <h5>
+                  The Copyright Act, 1957
+                </h5>
+                <p>The Copyright Act, 1957, enacted by the Government of India, is the foundational legislation governing copyright law in India. It has been effective since 21 January 1958 and originated during the colonial era under the British Empire. This Act protects a wide range of original works, including literary, dramatic, musical, and artistic works, as well as cinematograph films and sound recordings from unauthorised uses.</p>
+                <ul>
+                  <li>•	Expressions, Not Ideas: Unlike patents, which protect innovative ideas, copyright law focuses on protecting the expressions of those ideas in a tangible form.</li>
+                  <li>•	Copyright Amendment Act, 2012: To keep up with global standards, the Copyright Act was amended in 2012. This amendment made Indian copyright law compliant with the Internet Treaties, including the WIPO Copyright Treaty (WCT) and the WIPO Performances and Phonograms Treaty (WPPT), addressing changes necessary for the digital environment.</li>
+                </ul>
+
+                <h3>Role of the Registrar of Copyrights</h3>
+                <p>The Registrar of Copyrights is the head of the Copyright Office, which operates under the Department of Industrial Policy and Promotion within the Ministry of Commerce and Industry. The Registrar is appointed by the Central Government and is responsible for enforcing the Copyright Act and overseeing its implementation. The Copyright Office has several key roles:</p>
+                <ul>
+                  <li>Registration of Copyright Works: Responsible for the registration of literary, musical, and artistic works and other types protected by copyright.</li>
+                  <li>Issuance of Copyright Certificates: Provides a copyright certificate upon registration, which serves as legal proof of ownership and aids in copyright infringement enforcement.</li>
+                  <li>Copyright Information Services: Offers information to the public on copyright law, registration procedures, and related matters.</li>
+                  <li>Maintenance of Copyright Records: Keeps a public register of copyright works and other related information, ensuring transparency and accessibility.</li>
+                </ul>
+
+                <h5>International Copyright Conventions</h5>
+                <p>India is a party to several major international copyright conventions that extend protections globally. Key conventions include:</p>
+                
+                <h5>Berne Convention</h5>
+                <p>This convention introduced the principle that copyright protection exists automatically once a work is "fixed" (written or recorded on some physical medium), without the need for formal registration.</p>
+
+                <h5>TRIPS Agreement</h5>
+                <p>The TRIPS Agreement mandates member countries to establish rental rights for certain types of content, particularly computer programs and films, ensuring copyright owners control over the rental of their works.</p>
+
+                <h5>WIPO Copyright Treaty (WCT)</h5>
+                <p>A special agreement under the Berne Convention, focusing on the protection of works and rights of their authors in the digital environment, including online uses and distribution.</p>
+
+                <h5>Legal Rights of a Copyright Owner</h5>
+                <p>Under Indian copyright law, a copyright owner enjoys several exclusive rights over their work:</p>
+
+                <ul>
+                  <li>Right of Reproduction: The exclusive right to reproduce the work.</li>
+                  <li>Right to Distribute: The right to distribute copies to the public.</li>
+                  <li>Right to Public Performance: The right to perform the work publicly.</li>
+                  <li>Right to Public Display: The right to display the work publicly.</li>
+                  <li>Right to Communication: The right to communicate the work to the public.</li>
+                  <li>Right to Adaptation: The right to create adaptations or derivative works.</li>
+                  <li>Right to Integrity: The right to protect the integrity of the work, ensuring it is not distorted.</li>
+                </ul>
+
+                <h5>Copyright Registration Process in India</h5>
+                <p>The Copyright Registration Process in India involves several steps to ensure that a creator's work is legally protected under copyright laws.</p>
+
+              </div>
+
+
+              <div id="process">
+                <h2>Step-by-Step Guide to the Process</h2>
+                <p>The application process includes filing the appropriate form along with statements of particulars and paying the necessary fee. Here’s a breakdown of the process:</p>
+              <ul>
+                <li>1. Application Submission: The applicant submits a copyright application form (Form XIV) on the Copyright Office website</li>
+                <li>2. Fee Payment: The prescribed fee varies depending on the type of work (e.g., literary, artistic)</li>
+                <li>3. Issuance of Diary Number: After the application and payment, a Dairy Number is issued as an acknowledgment of the application</li>
+                <li>4. Examination: The Copyright Division examines the application for any discrepancies or missing information</li>
+                <li>5. Objection Handling: If there are objections, the applicant must respond with a legally sound reply</li>
+                <li>6. Certificate Issuance: Upon successful processing, the Copyright Certificate is issued as proof of registration.</li>
+              </ul>
+              
+              </div>
+
+              <div id="documents">
+                <h2>Documents required for copyright registration in india</h2>
+                <p>To complete a copyright application in India, specific documents are necessary. Each document serves a purpose in verifying the authorship and originality of the work. Here is a list of essential documents required for the registration:</p>
+                <ul>
+                  <li>Copies of the Work: At least two copies of the work, whether literary, artistic, or software, must be provided.</li>
+                  <li>Payment Proof: Proof of payment for the copyright registration fee.</li>
+                  <li>No-Objection Certificate (NOC): An NOC from the author or applicant, particularly if there are multiple contributors or owners.</li>
+                  <li>Power of Attorney: Required if an agent or representative is filing on behalf of the copyright owner.</li>
+                  <li>Source Code (for Software): The first and last 10 pages of the source code, if the work is a computer program.</li>
+                  <li>Information about the Work: Details describing the nature, category, and title of the work.</li>
+                  <li>Information about the Applicant: Name, contact information, and details of the applicant.</li>
+                  <li>Information about the Author: Name, nationality, and other details about the creator of the work.</li>
+                  <li>Publication Details: If the work has been published, details regarding the date and place of publication.</li>
+                  
+                </ul>
+
+                <h5>Issuance of Dairy Number in Copyright</h5>
+                <p>The Dairy Number is issued after the submission and initial processing of the copyright application. It serves as a tracking reference for the applicant. The steps involved are:</p>
+                <h5>Submission of Application</h5>
+                <p>The applicant submits Form XIV through the online system on the Copyright Office website.</p>
+                <h5>Payment of Prescribed Fees</h5>
+                <p>The applicant completes the payment as required by the Copyright Act.</p>
+                <h5>Issuance of Dairy Number</h5>
+                <p>After verification of the application and payment, the Copyright Registrar issues a Dairy Number, which the applicant can use to check the status of the application.</p>
+
+
+              </div>
+
+              <div id="object">
+                <h2>Handling Copyright Objections</h2>
+                <p>When applying for copyright registration, applicants may encounter objections raised by the Registrar of Copyrights. Addressing these objections promptly and effectively is critical for progressing with the application. Here’s a structured approach to handling copyright objections:</p>
+                <p>Step 1: Analyze the Objection</p>
+                <ul>
+                  <li>Carefully review the discrepancy letter to understand the exact reason for the objection.</li>
+                  <li>Identify relevant sections of the Copyright Act that apply to the objection, as this legal analysis is essential for crafting a strong response.</li>
+                  <li>Ensure you fully understand the specific issue or provisions in question before proceeding.</li>
+                </ul>
+
+                <h5>Step 2: Drafting a Reply</h5>
+                <ul>
+                  <li>Prepare a detailed reply addressing each point of the objection. Reference relevant legal provisions, case laws, and judgments to support your position.</li>
+                  <li>Clearly explain the reasoning behind your request for copyright, aligning your argument with the Copyright Act to increase the chances of acceptance.</li>
+                  <li>Ensure that your reply is well-structured, accurate, and legally sound, as this strengthens the likelihood of having the objection dismissed.</li>
+                </ul>
+                <h5>Step 3: Filing the Reply</h5>
+                <ul>
+                  <li>Submit the reply, along with any required supporting documents and an affidavit (if necessary), to the Registrar of Copyrights within 30 days of receiving the discrepancy letter.</li>
+                  <li>Timeliness is essential; delays can impact the progression of your application.</li>
+                </ul>
+                <h5>Step 4: Registrar's Decision</h5>
+                <ul>
+                  <li>The Registrar will review the submitted reply. If the response is found to be satisfactory and compliant with copyright law, the objection will be dismissed.</li>
+                  <li>Upon approval, the Certificate of Copyright Registration will be issued, officially completing the registration process and confirming your copyright.</li>
+                </ul>
+
+                <h5>Issuance of the Copyright Certificate</h5>
+                <p>After successful processing and the resolution of any objections, the final Copyright Certificate is issued. The key steps in reaching this stage include:</p>
+                
+                <h5>Application</h5>
+                <p>Submission of the initial copyright application form.</p>
+                <h5>Examination</h5>
+                <p>Verification by the Copyright Office to ensure compliance.</p>
+                <h5>Registration</h5>
+                <p>Acceptance of the application and issuance of the Dairy Number.</p>
+                <h5>Objection Handling</h5>
+                <p>Addressing any objections raised during examination.</p>
+                <h5>Application Scrutiny</h5>
+                <p>Final scrutiny by the Registrar before issuing the certificate.</p>
+                <h5>Copyright Registration Fees in India</h5>
+                <p>The fee for copyright registration in India is determined by the type of work and sometimes by the nature of the applicant (individual or corporate). Different categories of creative works have distinct fee structures under the Copyright Act, here is an outline for the same:</p>
+
+                <table>
+                  <thead>
+                    <tr>
+                      <th>S.No.</th>
+                      <th>Description</th>
+                      <th>Fee</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Literary, Dramatic, Musical, or Artistic Work</td>
+                      <td>₹500/- per work</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Cinematograph Film</td>
+                      <td>2	Cinematograph Film	₹5,000/- per work</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Sound Recording</td>
+                      <td>₹2,000/- per work</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>Note: Fees are subject to change based on the type of work, applicant, and any other relevant factors. Professional assistance fees may apply for copyright registration.</p>
+
+                <h5>Duration and Validity of Copyright</h5>
+                <p>The duration and validity of copyright protection vary based on the type of work and the creator's circumstances. Understanding these timeframes is crucial for ensuring continued rights over your creative works.</p>
+                <h5>How Long Does Copyright Last?</h5>
+                <p>In India, the duration of copyright protection for original literary, dramatic, musical, and artistic works is the lifetime of the author plus an additional 60 years. This means that copyright remains in effect for 60 years beyond the death of the author.</p>
+                
+                <p>In cases of joint authorship, where there are multiple authors, the copyright term extends for 60 years after the death of the last surviving author.</p>
+                <ul>
+                  <li>For individual authors: Copyright lasts for the lifetime of the author plus 60 years.</li>
+                  <li>For joint authorship: Copyright protection continues for 60 years after the death of the last author.</li>
+                </ul>
+                
+                <p>This extended period allows the author's work to remain protected for a substantial time, benefitting their heirs or designated rights holders.</p>
+                <h5>Renewal and Cancellation of Copyright</h5>
+                <p>In India, copyright does not require renewal once granted, as the term is fixed by law. However, under certain circumstances, it can be relinquished or canceled. Here’s an overview:</p>
+                <h5>Relinquishment of Rights</h5>
+                <p>The copyright owner may voluntarily give up or relinquish their rights if they no longer wish to hold them. This requires a formal declaration to the Copyright Office.</p>
+                <h5>Cancellation of Copyright</h5>
+                <p>The Copyright Office can cancel or revoke copyright registration if it is found that the registration was obtained through fraudulent means or if the work does not qualify for copyright.</p>
+                <h5>Rectification of Records</h5>
+                <p>If there are any errors or incorrect entries in the copyright register, the Copyright Office has the authority to rectify these records to ensure accuracy.</p>
+                
+                <p>These processes allow for the maintenance of accurate copyright records and provide options for copyright holders to manage their rights as per their needs.</p>
+                <h5>Rights Granted by Copyright Registration</h5>
+                <p>Copyright registration grants the copyright owner a strong legal basis to protect and manage their intellectual property. These rights allow the creator to control how their work is used, reproduced, and shared. Here are the key rights granted by copyright registration:</p>
+                <ol>
+                  <li>Right of Reproduction: The owner has exclusive rights to make copies or reproduce the work in any format, including physical and digital copies.</li>
+                  <li>Storage Rights: Copyright allows the creator to control how their work is stored, especially in digital formats, protecting it from unauthorized storage or replication.</li>
+                  <li>Right of Publication: This right enables the copyright owner to publish their work and make it available to the public for the first time.</li>
+                  <li>Public Performance Rights: The owner has the exclusive right to perform the work publicly, which is essential for music, theater, and other performative works.</li>
+                  <li>Right of Communication: This right includes broadcasting or communicating the work to the public, whether through traditional media, digital platforms, or live streaming.</li>
+                  <li>Right of Adaptation: The copyright owner can create adaptations or derivative works based on the original, such as translations, film adaptations, or modified versions.</li>
+                  <li>Protection of Reputation: Copyright laws protect the creator’s reputation, ensuring that their work is not altered in a way that damages their name or the integrity of the original content.</li>
+                  <li>Distribution Rights: The owner has the right to control the distribution of their work, including selling, leasing, or licensing copies.</li>
+                  <li>Right for Paternity and Integrity: This moral right allows the creator to be acknowledged as the author (paternity) and to prevent any changes to their work that could harm its integrity or misrepresent their creative intentions.</li>
+                </ol>
+                <p>These rights empower creators by giving them comprehensive control over the use, distribution, and adaptation of their work, providing both legal protection and avenues for monetization.</p>
+                <h5>Copyright Infringement and Legal Remedies</h5>
+                <p>Copyright infringement occurs when someone uses or reproduces copyrighted material without the permission of the copyright holder. Copyright protects original works like literature, music, art, software, films, and more, providing creators exclusive rights to use and distribute their creations.</p>
+
+              </div>
+
+              <div id="infringement">
+                <h2>What Constitutes Copyright Infringement?</h2>
+                <p>Copyright infringement occurs when copyrighted work is used or produced without the permission of the copyright owner, breaching their exclusive rights over the work for a set period. This unauthorised use includes several specific acts, each of which violates the owner’s exclusive rights:</p>
+                <ol>
+                  <li>Reproducing the Work: Copying or replicating the work in any form.</li>
+                  <li>Distributing the Work: Sharing copies of the work, whether through sale, rental, or other means.</li>
+                  <li>Performing the Work: Publicly performing the work without authorization.</li>
+                  <li>Public Display of the Work: Displaying the work in public settings without permission.</li>
+                  <li>Creating Derivative Works: Making adaptations or modifications, such as translations or sequels, based on the original work.</li>
+                  <li>Authorising Use by Others: Granting permission to a third party to use the work without the owner’s consent.</li>
+                  <li>Linking to Infringing Material: Linking to content online that infringes on copyright.</li>
+                  <li>Permitting Infringing Use of a Venue: Allowing a location to be used for copyright-infringing activities.</li>
+                  <li>Importing Infringing Copies: Bringing infringing copies of a copyrighted work into the country.</li>
+                </ol>
+
+                <h5>Civil and Criminal Remedies</h5>
+                <p>Under the Copyright Act of 1957, both civil and criminal remedies are available to address copyright infringement. These remedies serve to protect the rights of the copyright owner and deter future infringement.</p>
+
+                <p>1. Civil Remedies (Section 55):</p>
+                <ul>
+                  <li>Interlocutory Injunctions: Court orders to stop infringing activities immediately.</li>
+                  <li>Pecuniary Remedies: Compensation to the copyright owner in the form of damages.</li>
+                  <li>Anton Piller Orders: Orders that allow the plaintiff to search premises and seize infringing goods.</li>
+                  <li>Mareva Injunction: Freezes the infringer’s assets to prevent them from being moved out of reach.</li>
+                  <li>Norwich Pharmacal Order: Requires third parties to provide information on the infringement.</li>
+                  <li>Delivery and Destruction of Infringing Copies: Court orders that infringing copies be delivered to the copyright owner or destroyed.</li>
+                </ul>
+
+                <h5>2. Criminal Remedies:</h5>
+                <ul>
+                  <li>Imprisonment: In severe cases, infringers may face prison time as a deterrent.</li>
+                  <li>Fines: Monetary penalties imposed on the infringer.</li>
+                  <li>Seizure of Infringing Copies: Law enforcement may confiscate infringing copies.</li>
+                  <li>Delivery of Infringing Goods to Owner: Infringing goods are handed over to the copyright owner as part of the resolution.</li>
+                </ul>
+
+                <h5>Jurisdiction for Copyright Infringement</h5>
+                <p>Under Section 62 of the Copyright Act, 1957, jurisdiction for copyright infringement cases is specified. According to this section:</p>
+                <ul>
+                  <li>Copyright infringement suits or civil proceedings must be filed in the district court that has jurisdiction over the matter.</li>
+                  <li>This provision allows copyright owners to initiate legal action in a court that has the authority to hear cases related to copyright, ensuring effective enforcement of their rights.</li>
+                </ul>
+
+                <h5>Conditions for Filing a Copyright Application</h5>
+                <p>Before filing a copyright application, it's essential to understand who is eligible to file, the required documentation, and the specific steps for submitting the application either online or offline. <br><br>
+                  Who Can File for Copyright? <br><br>
+                  Under the Copyright Act of 1957, the following individuals or entities are legally eligible to file a copyright application:
+                  </p>
+                  <ul>
+                    <li>The Author: The original creator of the work.</li>
+                    <li>The Original Owner: If ownership rights have been transferred from the author.</li>
+                    <li>An Authorised Agent: A representative authorised to file on behalf of the author or owner.</li>
+                  </ul>
+
+                  <p>
+                    Required Documents <br><br>
+To file a copyright application, applicants must submit specific documents to establish eligibility and ownership:
+
+                  </p>
+                  <ul>
+                    <li>Proof of Originality: Evidence that the work is original and unique.</li>
+                    <li>Proof of Identity: Identification for the author, owner, or agent.</li>
+                    <li>Proof of Ownership: Documents confirming legal ownership, especially if transferred from the original author.</li>
+                  </ul>
+                  <p>Application Submission Guidelines</p>
+                  <p>An application for copyright registration should be submitted to the Copyright Office with necessary documents, such as an application form that has been duly completed and a copy of the work being registered.</p>
+
+                  <h5>Checking the Status of Your Copyright Application</h5>
+                  <p>After filing a copyright application, you can check its status online through the copyright portal. The process varies slightly depending on whether the application was submitted online or offline.</p>
+                  <h5>How to Check Your Application Status Online</h5>
+                  <p>1. Visit the Copyright Portal: Access the official copyright portal where the application was filed.</p>
+                  <p>2. For Online Applications:</p>
+                  <ul>
+                    <li>Enter the Diary Number provided during the online application process.</li>
+                    <li>Click on “View Status” to see the current status of your application.</li>
+                  </ul>
+                  <p>3. For Offline Applications:</p>
+                  <ul>
+                    <li>Select the “offline” option on the portal.</li>
+                    <li>Enter the Class of Work relevant to your application.</li>
+                    <li>Provide the Title of the Work as submitted.</li>
+                    <li>Click on “View Status” to check the status.</li>
+                  </ul>
+                  <h3>Why Choose “Lex Claws” for Copyright Registration?</h3>
+                  <p>Copyright registration is a critical step for creators, providing essential benefits like legal protection, economic rights, and a global reach. “Lex Claws” simplifies this process, offering expert guidance to secure your creative work efficiently and effectively. Here’s why “Lex Claws” is the ideal choice for copyright registration:</p>
+                  <p>1. Comprehensive Legal Protection: ”Lex Claws” ensures that your copyright registration is completed accurately and promptly, giving you strong legal protection against unauthorised use, duplication, and distribution of your work. Our team handles the paperwork and procedural details, reducing your legal risk.</p>
+                  <p>2. Clear Public Record: Copyright registration through “Lex Claws” creates a public record of your ownership, which demonstrates your rights clearly to potential collaborators, investors, or licensees. This public acknowledgment strengthens your claim to your creative work.</p>
+                  <p>3. Economic Rights and Monetisation: With “Lex Claws”, creators can secure exclusive economic rights, enabling them to licence, sell, or transfer their work confidently. We assist you in maximising the economic value of your creations, opening up multiple revenue streams.</p>
+                  <p>4. Access to Statutory Damages: ”Lex Claws” helps registered copyright holders access statutory damages in cases of infringement, making it easier to seek compensation without the need to prove actual losses. This advantage can prove invaluable in protecting your interests.</p>
+                  <p>5. Prima Facie Evidence of Ownership: In the event of a legal dispute, copyright registration provides prima facie evidence of ownership in court. “Lex Claws”’s thorough registration process strengthens your position with this crucial evidence, simplifying the enforcement of your rights.</p>
+                  <p>6. Enhanced Brand Value: By choosing “Lex Claws”, creators can add credibility and professionalism to their brand, reinforcing trust among clients, customers, and followers. Copyright registration signals a commitment to protecting your intellectual property, which enhances your brand value.</p>
+                  <p>7. Global Copyright Reach: ”Lex Claws”’s expertise aligns your copyright with international treaties, providing extended protection in multiple countries. This global reach is essential for creators aiming to expand their impact beyond India.</p>
+                  
               </div>
             </div>
             <aside class="table-of-contents contact" data-aos="fade-left">
@@ -542,12 +849,10 @@
   <script>
   const bookmarksNavbar = document.getElementById('bookmarks-navbar');
   const sectionIds = [
-    "introduction",
-    "skeuomorphism",
-    "flat-design",
-    "material-design",
-    "neumorphism",
-    "future"
+   "#process",
+"#documents",
+"#object",
+"#infringement"
   ];
   const navLinks = Array.from(bookmarksNavbar.querySelectorAll('.nav-link'));
 
