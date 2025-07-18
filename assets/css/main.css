@@ -6432,7 +6432,7 @@ justify-content: center;
 
 .blog-details .article-wrapper .table-of-contents {
   position: sticky;
-  top: 100px;
+  top: 160px;
   height: fit-content;
   padding: 1rem;
   background: var(--surface-color);
