@@ -1,31 +1,40 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$receiving_email_address = 'contact.lexclaws@gmail.com';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-if (file_exists($php_email_form = 'vendor/php-email-form/php-email-form.php')) {
+$mail = new PHPMailer(true);
 
-  include($php_email_form);
-} else {
-  die('Unable to load the "PHP Email Form" Library!');
+try {
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'lexclaws.contactform@gmail.com'; // Your Gmail
+    $mail->Password   = 'bztc wxet qoqa usfn';   // Your Gmail App Password
+    $mail->SMTPSecure = 'tls';
+    $mail->Port       = 587;
+
+    // Recipients
+    $mail->setFrom($_POST['email'], $_POST['name']);
+    $mail->addAddress('contact.lexclaws@gmail.com'); // Where the mail should be sent
+
+    // Content
+    $mail->isHTML(true);
+    $mail->Subject = 'New Contact Form Message';
+    $mail->Body    = "
+        <h3>New Enquiry Message</h3>
+        <p><strong>Name:</strong> {$_POST['name']}</p>
+        <p><strong>Email:</strong> {$_POST['email']}</p>
+        <p><strong>Phone:</strong> {$_POST['phone']}</p>
+        <p><strong>Message:</strong><br>{$_POST['message']}</p>
+    ";
+
+    $mail->send();
+    echo 'OK'; // For AJAX success check
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-
-
-$contact = new PHP_Email_Form;
-$contact->ajax = true;
-
-$contact->to = $receiving_email_address;
-$contact->from_name = $_POST['name'];
-$contact->from_email = $_POST['email'];
-$contact->subject = "New Contact Form Submission";
-
-$contact->add_message($_POST['name'], 'From');
-$contact->add_message($_POST['email'], 'Email');
-$contact->add_message($_POST['phone'], 'Phone');
-$contact->add_message($_POST['message'], 'Message', 10);
-
-if ($contact->send()) {
-  echo 'OK';
-} else {
-  echo 'Message could not be sent.';
-}
-?>
