@@ -207,23 +207,23 @@ h6 {
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 
-.navmenu a .form-group{
+.navmenu .form-group{
   border: 1px solid #dadada;
   border-radius:50px;
 }
-.navmenu a .form-group i{
+.navmenu .form-group i{
   color: #9c9c9c;
   cursor: text;
 
 }
-.navmenu a input{
+.navmenu input{
   border: none;
   background-color: transparent;
   width: 83%;
   padding: 5px 10px;
   font-size: 15px;
 }
-.navmenu a input:focus-visible{
+.navmenu input:focus-visible{
   border-color: transparent;
   outline: none;
   border: none;
@@ -8819,3 +8819,32 @@ justify-content: center;
 .suggestion-item:hover {
   background-color: #f0f0f0;
 }
+
+
+/* Mobile responsive table */
+@media screen and (max-width: 600px) {
+  #suggestions {
+    /* border: 1px solid #ccc; */
+    max-height: 150px;
+    overflow-y: auto;
+    top: 282px;
+        right: 49px;
+    position: absolute;
+    background: white;
+    width: 270px;
+    display: none;
+    z-index: 10;
+    color: #000;
+    border-radius: 10px;
+  }
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+}
+
+

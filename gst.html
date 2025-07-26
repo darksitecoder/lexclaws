@@ -32,79 +32,103 @@
     }
     
     /* Responsive Table Styles */
+    /* Responsive Table Styles */
     .table-responsive {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      margin: 20px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .table-responsive table {
-      width: 100%;
-      min-width: 600px;
-      border-collapse: collapse;
-      background: white;
-    }
-    
-    .table-responsive th {
-      background: #f8f9fa;
-      font-weight: 600;
-      text-align: left;
-      padding: 12px 15px;
-      border: 1px solid #dee2e6;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    
-    .table-responsive td {
-      padding: 12px 15px;
-      border: 1px solid #dee2e6;
-      vertical-align: top;
-      line-height: 1.5;
-    }
-    
-    .table-responsive tr:nth-child(even) {
-      background-color: #f8f9fa;
-    }
-    
-    .table-responsive tr:hover {
-      background-color: #e9ecef;
-    }
-    
-    /* Mobile responsive table */
-    @media (max-width: 768px) {
-      .table-responsive {
-        font-size: 14px;
-      }
-      
-      .table-responsive th,
-      .table-responsive td {
-        padding: 8px 10px;
-        min-width: 120px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
       
       .table-responsive table {
-        min-width: 500px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .table-responsive {
-        font-size: 12px;
+        border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
       }
       
-      .table-responsive th,
+      .table-responsive th {
+        background: #f8f9fa;
+        font-weight: 600;
+        text-align: left;
+        padding: 12px 15px;
+        border: 1px solid #dee2e6;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+      
       .table-responsive td {
-        padding: 6px 8px;
-        min-width: 100px;
+        padding: 12px 15px;
+        border: 1px solid #dee2e6;
+        vertical-align: top;
+        line-height: 1.5;
+        text-align: left;
       }
       
-      .table-responsive table {
-        min-width: 400px;
+      .table-responsive tr:nth-child(even) {
+        background-color: #f8f9fa;
       }
-    }
+      
+      .table-responsive tr:hover {
+        background-color: #e9ecef;
+      }
+      
+      /* Mobile responsive table */
+      @media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: left;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
   </style>
 </head>
 
@@ -172,9 +196,9 @@
           <li><a href="bareacts.html">Bare Acts</a></li>
           <li><a href="#">Articles</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="#" class="discover-btn"><div class="form-group d-flex align-items-center">
+          <li><div class="form-group d-flex align-items-center">
             <input type="text" class="" name="subject" id="subject" placeholder="Search Your Query">
-            <i class="bi bi-search fw-bolder fs-5"></i></div></a></li>
+            <i class="bi bi-search fw-bolder fs-5"></i></div></li>
             <div id="suggestions"></div>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
